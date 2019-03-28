@@ -9,7 +9,7 @@ import java.io.Serializable;
 /**
  * The class Modify user status dto.
  *
- * @author cldt@gmail.com
+ * @author cldt
  */
 @Data
 @ApiModel(value = "用户禁用/启用Dto ")

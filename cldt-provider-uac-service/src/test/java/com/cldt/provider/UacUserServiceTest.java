@@ -11,7 +11,7 @@ import java.util.List;
 
 /**
  * The class Uac user service test.
- * @author cldt@gmail.com
+ * @author cldt
  */
 public class UacUserServiceTest extends PaasCloudUacApplicationTests {
 	@Resource

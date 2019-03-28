@@ -3,7 +3,7 @@
 
  * 类名称：Perm.java
 
- * 联系方式：cldt@gmail.com
+ * 联系方式：cldt
 
  * 博客地址: http://blog.cldt
  * 项目官网: http://cldt
@@ -18,7 +18,7 @@ import java.io.Serializable;
 /**
  * The class Perm.
  *
- * @author cldt@gmail.com
+ * @author cldt
  */
 @Data
 public class Perm implements Serializable {

@@ -15,7 +15,7 @@ import java.util.Date;
 /**
  * The class Uac log.
  *
- * @author cldt@gmail.com
+ * @author cldt
  */
 @EqualsAndHashCode(callSuper = true)
 @Data

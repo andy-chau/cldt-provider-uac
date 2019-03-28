@@ -9,7 +9,7 @@ import lombok.Data;
 /**
  * The class Cart list query.
  *
- * @author cldt@gmail.com
+ * @author cldt
  */
 @Data
 public class CartListQuery implements Serializable {

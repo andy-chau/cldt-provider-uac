@@ -13,7 +13,7 @@ import java.util.List;
 /**
  * The class Uac group.
  *
- * @author cldt@gmail.com
+ * @author cldt
  */
 @EqualsAndHashCode(callSuper = true)
 @Data

@@ -3,7 +3,7 @@ package com.cldt.provider.model.enums;
 /**
  * The enum Uac email template enum.
  *
- * @author cldt@gmail.com
+ * @author cldt
  */
 public enum UacEmailTemplateEnum {
 

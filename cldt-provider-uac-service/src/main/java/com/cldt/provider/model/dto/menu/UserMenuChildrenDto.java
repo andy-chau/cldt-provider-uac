@@ -8,7 +8,7 @@ import java.io.Serializable;
 /**
  * The class User menu children dto.
  *
- * @author cldt@gmail.com
+ * @author cldt
  */
 @Data
 public class UserMenuChildrenDto implements Serializable {

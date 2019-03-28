@@ -3,7 +3,7 @@
 
  * 类名称：AliyunMqConfiguration.java
 
- * 联系方式：cldt@gmail.com
+ * 联系方式：cldt
 
  * 博客地址: http://blog.cldt
  * 项目官网: http://cldt
@@ -31,7 +31,7 @@ import com.cldt.utils.PublicUtil;
 /**
  * The class Aliyun mq configuration.
  *
- * @author cldt@gmail.com
+ * @author cldt
  */
 @Slf4j
 //@Configuration

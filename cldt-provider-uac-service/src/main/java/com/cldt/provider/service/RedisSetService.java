@@ -3,7 +3,7 @@
 
  * 类名称：RedisSetService.java
 
- * 联系方式：cldt@gmail.com
+ * 联系方式：cldt
 
  * 博客地址: http://blog.cldt
  * 项目官网: http://cldt
@@ -16,7 +16,7 @@ import java.util.Set;
 /**
  * The interface Redis set service.
  *
- * @author cldt@gmail.com
+ * @author cldt
  */
 public interface RedisSetService {
 	/**

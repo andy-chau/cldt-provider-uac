@@ -3,7 +3,7 @@
 
  * 类名称：Item.java
 
- * 联系方式：cldt@gmail.com
+ * 联系方式：cldt
 
  * 博客地址: http://blog.cldt
  * 项目官网: http://cldt
@@ -17,7 +17,7 @@ import lombok.Data;
 /**
  * The class Item.
  *
- * @author cldt@gmail.com
+ * @author cldt
  */
 @Data
 @ApiModel

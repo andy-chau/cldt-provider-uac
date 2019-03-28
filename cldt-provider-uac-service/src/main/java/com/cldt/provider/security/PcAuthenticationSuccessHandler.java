@@ -27,7 +27,7 @@ import java.io.IOException;
 /**
  * APP环境下认证成功处理器.
  *
- * @author cldt@gmail.com
+ * @author cldt
  */
 @Component("pcAuthenticationSuccessHandler")
 @Slf4j

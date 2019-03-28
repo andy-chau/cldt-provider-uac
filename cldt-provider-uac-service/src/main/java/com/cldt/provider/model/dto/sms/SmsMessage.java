@@ -8,7 +8,7 @@ import java.io.Serializable;
 /**
  * The class Sms message.
  *
- * @author cldt@gmail.com
+ * @author cldt
  */
 @Data
 @NoArgsConstructor

@@ -3,7 +3,7 @@
 
  * 类名称：UserRegisterDto.java
 
- * 联系方式：cldt@gmail.com
+ * 联系方式：cldt
 
  * 博客地址: http://blog.cldt
  * 项目官网: http://cldt
@@ -20,7 +20,7 @@ import java.io.Serializable;
 /**
  * The class User register dto.
  *
- * @author cldt@gmail.com
+ * @author cldt
  */
 @Data
 @ApiModel(value = "用户注册Dto")

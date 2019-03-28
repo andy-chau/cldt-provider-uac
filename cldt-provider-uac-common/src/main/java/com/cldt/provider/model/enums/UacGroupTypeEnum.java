@@ -3,7 +3,7 @@
 
  * 类名称：UacGroupTypeEnum.java
 
- * 联系方式：cldt@gmail.com
+ * 联系方式：cldt
 
  * 博客地址: http://blog.cldt
  * 项目官网: http://cldt
@@ -21,7 +21,7 @@ import java.util.Map;
 /**
  * The enum Uac group type enum.
  *
- * @author cldt@gmail.com
+ * @author cldt
  */
 public enum UacGroupTypeEnum {
 

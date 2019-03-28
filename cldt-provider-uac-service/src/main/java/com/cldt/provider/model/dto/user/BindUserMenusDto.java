@@ -10,7 +10,7 @@ import java.util.List;
 /**
  * The class Bind user menus dto.
  *
- * @author cldt@gmail.com
+ * @author cldt
  */
 @Data
 public class BindUserMenusDto implements Serializable {

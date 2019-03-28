@@ -3,7 +3,7 @@
 
  * 类名称：UacRoleStatusEnum.java
 
- * 联系方式：cldt@gmail.com
+ * 联系方式：cldt
 
  * 博客地址: http://blog.cldt
  * 项目官网: http://cldt
@@ -15,7 +15,7 @@ package com.cldt.provider.model.enums;
 /**
  * The enum Uac role status enum.
  *
- * @author cldt@gmail.com
+ * @author cldt
  */
 public enum UacRoleStatusEnum {
 	/**

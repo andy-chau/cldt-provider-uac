@@ -16,7 +16,7 @@ import java.util.Set;
 /**
  * The class Uac role action service.
  *
- * @author cldt@gmail.com
+ * @author cldt
  */
 @Service
 @Transactional(rollbackFor = Exception.class)

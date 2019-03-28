@@ -13,7 +13,7 @@ import java.util.List;
 /**
  * The class Uac group user service.
  *
- * @author cldt@gmail.com
+ * @author cldt
  */
 @Service
 public class UacGroupUserServiceImpl extends BaseService<UacGroupUser> implements UacGroupUserService {

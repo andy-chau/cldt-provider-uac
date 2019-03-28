@@ -12,7 +12,7 @@ import java.util.List;
 /**
  * The class Login resp dto.
  *
- * @author cldt@gmail.com
+ * @author cldt
  */
 @Data
 @ApiModel(value = "发送短信参数Dto")

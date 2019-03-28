@@ -37,7 +37,7 @@ import java.util.concurrent.TimeUnit;
 /**
  * The class Email service.
  *
- * @author cldt@gmail.com
+ * @author cldt
  */
 @Service
 @Slf4j

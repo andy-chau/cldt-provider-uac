@@ -3,7 +3,7 @@
 
  * 类名称：UacUserCommonController.java
 
- * 联系方式：cldt@gmail.com
+ * 联系方式：cldt
 
  * 博客地址: http://blog.cldt
  * 项目官网: http://cldt
@@ -40,7 +40,7 @@ import java.util.List;
 /**
  * 用户管理-公共方法.
  *
- * @author cldt@gmail.com
+ * @author cldt
  */
 @RestController
 @RequestMapping(value = "/user", produces = MediaType.APPLICATION_JSON_UTF8_VALUE)

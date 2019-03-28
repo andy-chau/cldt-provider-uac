@@ -3,7 +3,7 @@
 
  * 类名称：UacLogMainController.java
 
- * 联系方式：cldt@gmail.com
+ * 联系方式：cldt
 
  * 博客地址: http://blog.cldt
  * 项目官网: http://cldt
@@ -31,7 +31,7 @@ import javax.annotation.Resource;
 /**
  * 日志管理.
  *
- * @author cldt@gmail.com
+ * @author cldt
  */
 @RestController
 @RequestMapping(value = "/log", produces = MediaType.APPLICATION_JSON_UTF8_VALUE)

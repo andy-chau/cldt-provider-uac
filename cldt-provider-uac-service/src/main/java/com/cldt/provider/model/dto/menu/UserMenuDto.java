@@ -8,7 +8,7 @@ import java.util.List;
 /**
  * The class User menu dto.
  *
- * @author cldt@gmail.com
+ * @author cldt
  */
 @Data
 public class UserMenuDto implements Serializable {

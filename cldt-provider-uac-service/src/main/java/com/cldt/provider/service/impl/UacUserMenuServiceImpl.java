@@ -10,7 +10,7 @@ import org.springframework.transaction.annotation.Transactional;
 /**
  * The class Uac user menu service.
  *
- * @author cldt@gmail.com
+ * @author cldt
  */
 @Service
 @Transactional(rollbackFor = Exception.class)

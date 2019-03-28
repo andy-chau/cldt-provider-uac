@@ -3,7 +3,7 @@
 
  * 类名称：UacRoleUser.java
 
- * 联系方式：cldt@gmail.com
+ * 联系方式：cldt
 
  * 博客地址: http://blog.cldt
  * 项目官网: http://cldt
@@ -22,7 +22,7 @@ import java.io.Serializable;
 /**
  * The class Uac role user.
  *
- * @author cldt@gmail.com
+ * @author cldt
  */
 @Data
 @Table(name = "pc_uac_role_user")

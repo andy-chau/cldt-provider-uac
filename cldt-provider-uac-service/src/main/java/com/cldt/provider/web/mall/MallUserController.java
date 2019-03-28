@@ -3,7 +3,7 @@
 
  * 类名称：MallUserController.java
 
- * 联系方式：cldt@gmail.com
+ * 联系方式：cldt
 
  * 博客地址: http://blog.cldt
  * 项目官网: http://cldt
@@ -33,7 +33,7 @@ import javax.annotation.Resource;
 /**
  * The class Mall user controller.
  *
- * @author cldt@gmail.com
+ * @author cldt
  */
 @RestController
 @RequestMapping(value = "/user", produces = MediaType.APPLICATION_JSON_UTF8_VALUE)

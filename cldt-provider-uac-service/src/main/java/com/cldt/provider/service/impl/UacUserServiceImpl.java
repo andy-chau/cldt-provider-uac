@@ -93,7 +93,7 @@ import eu.bitwalker.useragentutils.UserAgent;
 /**
  * The class Uac user service.
  *
- * @author cldt@gmail.com
+ * @author cldt
  */
 @Service
 @Transactional(rollbackFor = Exception.class)

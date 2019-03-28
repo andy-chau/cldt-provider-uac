@@ -10,7 +10,7 @@ import java.io.Serializable;
 /**
  * The class Uac menu add dto.
  *
- * @author cldt@gmail.com
+ * @author cldt
  */
 @Data
 @ApiModel(value = "菜单新增Dto")

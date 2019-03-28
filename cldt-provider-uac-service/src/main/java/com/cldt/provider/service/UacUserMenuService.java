@@ -3,7 +3,7 @@
 
  * 类名称：UacUserMenuService.java
 
- * 联系方式：cldt@gmail.com
+ * 联系方式：cldt
 
  * 博客地址: http://blog.cldt
  * 项目官网: http://cldt
@@ -17,7 +17,7 @@ import com.cldt.common.core.support.IService;
 /**
  * The interface Uac user menu service.
  *
- * @author cldt@gmail.com
+ * @author cldt
  */
 public interface UacUserMenuService extends IService<UacUserMenu> {
 }

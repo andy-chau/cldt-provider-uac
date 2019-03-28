@@ -3,7 +3,7 @@
 
  * 类名称：CheckGroupNameDto.java
 
- * 联系方式：cldt@gmail.com
+ * 联系方式：cldt
 
  * 博客地址: http://blog.cldt
  * 项目官网: http://cldt
@@ -19,7 +19,7 @@ import lombok.Data;
 /**
  * The class Check group name dto.
  *
- * @author cldt@gmail.com
+ * @author cldt
  */
 @Data
 @ApiModel

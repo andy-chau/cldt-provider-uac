@@ -3,7 +3,7 @@
 
  * 类名称：UacMenuServiceImpl.java
 
- * 联系方式：cldt@gmail.com
+ * 联系方式：cldt
 
  * 博客地址: http://blog.cldt
  * 项目官网: http://cldt
@@ -46,7 +46,7 @@ import java.util.*;
 /**
  * The class Uac menu service.
  *
- * @author cldt@gmail.com
+ * @author cldt
  */
 @Service
 @Transactional(rollbackFor = Exception.class)

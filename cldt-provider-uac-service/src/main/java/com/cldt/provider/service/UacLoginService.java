@@ -3,7 +3,7 @@
 
  * 类名称：UacLoginService.java
 
- * 联系方式：cldt@gmail.com
+ * 联系方式：cldt
 
  * 博客地址: http://blog.cldt
  * 项目官网: http://cldt
@@ -17,7 +17,7 @@ import com.cldt.provider.model.dto.user.LoginRespDto;
 /**
  * The interface Uac login service.
  *
- * @author cldt@gmail.com
+ * @author cldt
  */
 public interface UacLoginService {
 

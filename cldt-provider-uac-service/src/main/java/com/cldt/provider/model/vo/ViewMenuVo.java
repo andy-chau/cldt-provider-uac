@@ -3,7 +3,7 @@
 
  * 类名称：ViewMenuVo.java
 
- * 联系方式：cldt@gmail.com
+ * 联系方式：cldt
 
  * 博客地址: http://blog.cldt
  * 项目官网: http://cldt
@@ -21,7 +21,7 @@ import java.io.Serializable;
 /**
  * The class Uac menu.
  *
- * @author cldt@gmail.com
+ * @author cldt
  */
 @EqualsAndHashCode(callSuper = true)
 @Data

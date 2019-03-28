@@ -3,7 +3,7 @@
 
  * 类名称：UacApiConstant.java
 
- * 联系方式：cldt@gmail.com
+ * 联系方式：cldt
 
  * 博客地址: http://blog.cldt
  * 项目官网: http://cldt
@@ -18,7 +18,7 @@ import lombok.NoArgsConstructor;
 /**
  * The class Uac api constant.
  *
- * @author cldt@gmail.com
+ * @author cldt
  */
 @NoArgsConstructor(access = AccessLevel.PRIVATE)
 public class UacApiConstant {

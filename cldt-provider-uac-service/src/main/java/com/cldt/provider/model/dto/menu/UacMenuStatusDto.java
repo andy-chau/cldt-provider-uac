@@ -9,7 +9,7 @@ import java.io.Serializable;
 /**
  * The class Uac menu status dto.
  *
- * @author cldt@gmail.com
+ * @author cldt
  */
 @Data
 @ApiModel(value = "UacMenuStatusDto")
