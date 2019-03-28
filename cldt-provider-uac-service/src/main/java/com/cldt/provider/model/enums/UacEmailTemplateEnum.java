@@ -1,9 +1,9 @@
-package com.paascloud.provider.model.enums;
+package com.cldt.provider.model.enums;
 
 /**
  * The enum Uac email template enum.
  *
- * @author paascloud.net@gmail.com
+ * @author cldt@gmail.com
  */
 public enum UacEmailTemplateEnum {
 

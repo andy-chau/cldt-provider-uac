@@ -1,16 +1,16 @@
-package com.paascloud.provider.service.impl;
+package com.cldt.provider.service.impl;
 
 
-import com.paascloud.core.support.BaseService;
-import com.paascloud.provider.model.domain.UacUserMenu;
-import com.paascloud.provider.service.UacUserMenuService;
+import com.cldt.common.core.support.BaseService;
+import com.cldt.provider.model.domain.UacUserMenu;
+import com.cldt.provider.service.UacUserMenuService;
 import org.springframework.stereotype.Service;
 import org.springframework.transaction.annotation.Transactional;
 
 /**
  * The class Uac user menu service.
  *
- * @author paascloud.net@gmail.com
+ * @author cldt@gmail.com
  */
 @Service
 @Transactional(rollbackFor = Exception.class)

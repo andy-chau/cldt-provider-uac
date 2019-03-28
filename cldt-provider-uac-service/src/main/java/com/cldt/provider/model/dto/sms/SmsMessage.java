@@ -1,4 +1,4 @@
-package com.paascloud.provider.model.dto.sms;
+package com.cldt.provider.model.dto.sms;
 
 import lombok.Data;
 import lombok.NoArgsConstructor;
@@ -8,7 +8,7 @@ import java.io.Serializable;
 /**
  * The class Sms message.
  *
- * @author paascloud.net@gmail.com
+ * @author cldt@gmail.com
  */
 @Data
 @NoArgsConstructor

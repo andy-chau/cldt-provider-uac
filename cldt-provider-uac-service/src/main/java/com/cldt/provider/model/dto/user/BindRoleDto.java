@@ -1,4 +1,4 @@
-package com.paascloud.provider.model.dto.user;
+package com.cldt.provider.model.dto.user;
 
 import io.swagger.annotations.ApiModel;
 import io.swagger.annotations.ApiModelProperty;
@@ -9,7 +9,7 @@ import java.io.Serializable;
 /**
  * The class Bind role dto.
  *
- * @author paascloud.net @gmail.com
+ * @author cldt @gmail.com
  */
 @Data
 @ApiModel(value = "绑定的用户信息")

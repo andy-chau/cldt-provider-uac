@@ -1,7 +1,7 @@
-package com.paascloud.provider.model.domain;
+package com.cldt.provider.model.domain;
 
 import com.fasterxml.jackson.annotation.JsonFormat;
-import com.paascloud.core.mybatis.BaseEntity;
+import com.cldt.common.core.mybatis.BaseEntity;
 import io.swagger.annotations.ApiModel;
 import lombok.Data;
 import lombok.EqualsAndHashCode;
@@ -15,7 +15,7 @@ import java.util.Date;
 /**
  * The class Uac log.
  *
- * @author paascloud.net@gmail.com
+ * @author cldt@gmail.com
  */
 @EqualsAndHashCode(callSuper = true)
 @Data

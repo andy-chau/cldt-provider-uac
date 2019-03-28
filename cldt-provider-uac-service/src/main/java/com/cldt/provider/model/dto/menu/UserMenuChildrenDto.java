@@ -1,6 +1,6 @@
-package com.paascloud.provider.model.dto.menu;
+package com.cldt.provider.model.dto.menu;
 
-import com.paascloud.provider.model.vo.MenuVo;
+import com.cldt.provider.model.vo.MenuVo;
 import lombok.Data;
 
 import java.io.Serializable;
@@ -8,7 +8,7 @@ import java.io.Serializable;
 /**
  * The class User menu children dto.
  *
- * @author paascloud.net@gmail.com
+ * @author cldt@gmail.com
  */
 @Data
 public class UserMenuChildrenDto implements Serializable {

@@ -27,11 +27,20 @@
             <groupId>com.cldt.common</groupId>
             <artifactId>cldt-common-util</artifactId>
         </dependency>
-    <dependency>
-      <groupId>com.github.pagehelper</groupId>
-      <artifactId>pagehelper</artifactId>
-      <version>5.0.3</version>
-    </dependency>
+        <dependency>
+            <groupId>com.cldt.common</groupId>
+            <artifactId>cldt-common-base</artifactId>
+        </dependency>
+        <dependency>
+            <groupId>com.cldt.common</groupId>
+            <artifactId>cldt-security-feign</artifactId>
+            <version>${cldt.oauth2.version}</version>
+        </dependency>
+        <dependency>
+            <groupId>com.github.pagehelper</groupId>
+            <artifactId>pagehelper</artifactId>
+            <version>5.0.3</version>
+        </dependency>
   </dependencies>
 
 </project>

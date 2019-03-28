@@ -1,38 +1,38 @@
 /*
- * Copyright (c) 2018. paascloud.net All Rights Reserved.
- * 项目名称：paascloud快速搭建企业级分布式微服务平台
+ * Copyright (c) 2018. cldt All Rights Reserved.
+
  * 类名称：UacMenuServiceImpl.java
- * 创建人：刘兆明
- * 联系方式：paascloud.net@gmail.com
- * 开源地址: https://github.com/paascloud
- * 博客地址: http://blog.paascloud.net
- * 项目官网: http://paascloud.net
+
+ * 联系方式：cldt@gmail.com
+
+ * 博客地址: http://blog.cldt
+ * 项目官网: http://cldt
  */
 
-package com.paascloud.provider.service.impl;
+package com.cldt.provider.service.impl;
 
 import com.google.common.base.Preconditions;
 import com.google.common.collect.Lists;
 import com.google.common.collect.Maps;
 import com.google.common.collect.Sets;
-import com.paascloud.PublicUtil;
-import com.paascloud.base.constant.GlobalConstant;
-import com.paascloud.base.dto.LoginAuthDto;
-import com.paascloud.base.enums.ErrorCodeEnum;
-import com.paascloud.core.support.BaseService;
-import com.paascloud.provider.mapper.UacMenuMapper;
-import com.paascloud.provider.model.constant.MenuConstant;
-import com.paascloud.provider.model.domain.UacMenu;
-import com.paascloud.provider.model.domain.UacRoleMenu;
-import com.paascloud.provider.model.dto.menu.UacMenuStatusDto;
-import com.paascloud.provider.model.enums.UacMenuStatusEnum;
-import com.paascloud.provider.model.exceptions.UacBizException;
-import com.paascloud.provider.model.vo.MenuVo;
-import com.paascloud.provider.model.vo.ViewMenuVo;
-import com.paascloud.provider.service.UacActionService;
-import com.paascloud.provider.service.UacMenuService;
-import com.paascloud.provider.service.UacRoleMenuService;
-import com.paascloud.provider.utils.TreeUtil;
+import com.cldt.utils.PublicUtil;
+import com.cldt.base.constant.GlobalConstant;
+import com.cldt.base.dto.LoginAuthDto;
+import com.cldt.base.enums.ErrorCodeEnum;
+import com.cldt.common.core.support.BaseService;
+import com.cldt.provider.mapper.UacMenuMapper;
+import com.cldt.provider.model.constant.MenuConstant;
+import com.cldt.provider.model.domain.UacMenu;
+import com.cldt.provider.model.domain.UacRoleMenu;
+import com.cldt.provider.model.dto.menu.UacMenuStatusDto;
+import com.cldt.provider.model.enums.UacMenuStatusEnum;
+import com.cldt.provider.model.exceptions.UacBizException;
+import com.cldt.provider.model.vo.MenuVo;
+import com.cldt.provider.model.vo.ViewMenuVo;
+import com.cldt.provider.service.UacActionService;
+import com.cldt.provider.service.UacMenuService;
+import com.cldt.provider.service.UacRoleMenuService;
+import com.cldt.provider.utils.TreeUtil;
 import org.apache.commons.lang3.StringUtils;
 import org.modelmapper.ModelMapper;
 import org.springframework.beans.BeanUtils;
@@ -46,7 +46,7 @@ import java.util.*;
 /**
  * The class Uac menu service.
  *
- * @author paascloud.net@gmail.com
+ * @author cldt@gmail.com
  */
 @Service
 @Transactional(rollbackFor = Exception.class)

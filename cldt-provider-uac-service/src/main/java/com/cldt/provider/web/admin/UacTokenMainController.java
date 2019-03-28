@@ -1,22 +1,22 @@
 /*
- * Copyright (c) 2018. paascloud.net All Rights Reserved.
- * 项目名称：paascloud快速搭建企业级分布式微服务平台
+ * Copyright (c) 2018. cldt All Rights Reserved.
+
  * 类名称：UacTokenMainController.java
- * 创建人：刘兆明
- * 联系方式：paascloud.net@gmail.com
- * 开源地址: https://github.com/paascloud
- * 博客地址: http://blog.paascloud.net
- * 项目官网: http://paascloud.net
+
+ * 联系方式：cldt@gmail.com
+
+ * 博客地址: http://blog.cldt
+ * 项目官网: http://cldt
  */
 
-package com.paascloud.provider.web.admin;
+package com.cldt.provider.web.admin;
 
 import com.github.pagehelper.PageInfo;
-import com.paascloud.core.support.BaseController;
-import com.paascloud.provider.model.dto.token.TokenMainQueryDto;
-import com.paascloud.provider.service.UacUserTokenService;
-import com.paascloud.wrapper.WrapMapper;
-import com.paascloud.wrapper.Wrapper;
+import com.cldt.common.core.support.BaseController;
+import com.cldt.provider.model.dto.token.TokenMainQueryDto;
+import com.cldt.provider.service.UacUserTokenService;
+import com.cldt.utils.wrapper.WrapMapper;
+import com.cldt.utils.wrapper.Wrapper;
 import io.swagger.annotations.Api;
 import io.swagger.annotations.ApiOperation;
 import io.swagger.annotations.ApiParam;
@@ -32,7 +32,7 @@ import javax.annotation.Resource;
 /**
  * token主页面.
  *
- * @author paascloud.net @gmail.com
+ * @author cldt @gmail.com
  */
 @RestController
 @RequestMapping(value = "/token", produces = MediaType.APPLICATION_JSON_UTF8_VALUE)

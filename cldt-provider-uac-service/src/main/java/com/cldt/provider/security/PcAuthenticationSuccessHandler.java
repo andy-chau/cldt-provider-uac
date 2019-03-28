@@ -1,10 +1,10 @@
-package com.paascloud.provider.security;
+package com.cldt.provider.security;
 
 import com.fasterxml.jackson.databind.ObjectMapper;
-import com.paascloud.core.utils.RequestUtil;
-import com.paascloud.provider.service.UacUserService;
-import com.paascloud.security.core.SecurityUser;
-import com.paascloud.wrapper.WrapMapper;
+import com.cldt.common.core.utils.RequestUtil;
+import com.cldt.provider.service.UacUserService;
+import com.cldt.security.core.SecurityUser;
+import com.cldt.utils.wrapper.WrapMapper;
 import lombok.extern.slf4j.Slf4j;
 import org.apache.commons.collections.MapUtils;
 import org.apache.commons.lang.StringUtils;
@@ -27,7 +27,7 @@ import java.io.IOException;
 /**
  * APP环境下认证成功处理器.
  *
- * @author paascloud.net@gmail.com
+ * @author cldt@gmail.com
  */
 @Component("pcAuthenticationSuccessHandler")
 @Slf4j

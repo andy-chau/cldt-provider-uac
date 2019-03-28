@@ -1,4 +1,4 @@
-package com.paascloud.provider.model.dto.user;
+package com.cldt.provider.model.dto.user;
 
 import io.swagger.annotations.ApiModel;
 import io.swagger.annotations.ApiModelProperty;
@@ -10,7 +10,7 @@ import java.io.Serializable;
 /**
  * 校验密码.
  *
- * @author paascloud.net@gmail.com
+ * @author cldt@gmail.com
  */
 @Data
 @ApiModel(value = "校验新密码是否与原始密码相同Dto ")

@@ -1,29 +1,29 @@
 /*
- * Copyright (c) 2018. paascloud.net All Rights Reserved.
- * 项目名称：paascloud快速搭建企业级分布式微服务平台
+ * Copyright (c) 2018. cldt All Rights Reserved.
+
  * 类名称：UacLoginServiceImpl.java
- * 创建人：刘兆明
- * 联系方式：paascloud.net@gmail.com
- * 开源地址: https://github.com/paascloud
- * 博客地址: http://blog.paascloud.net
- * 项目官网: http://paascloud.net
+
+ * 联系方式：cldt@gmail.com
+
+ * 博客地址: http://blog.cldt
+ * 项目官网: http://cldt
  */
 
-package com.paascloud.provider.service.impl;
+package com.cldt.provider.service.impl;
 
 import com.google.common.base.Preconditions;
-import com.paascloud.PublicUtil;
-import com.paascloud.base.dto.LoginAuthDto;
-import com.paascloud.base.enums.ErrorCodeEnum;
-import com.paascloud.provider.model.constant.UacConstant;
-import com.paascloud.provider.model.domain.UacUser;
-import com.paascloud.provider.model.dto.user.LoginRespDto;
-import com.paascloud.provider.model.exceptions.UacBizException;
-import com.paascloud.provider.model.vo.MenuVo;
-import com.paascloud.provider.security.SecurityUtils;
-import com.paascloud.provider.service.UacLoginService;
-import com.paascloud.provider.service.UacMenuService;
-import com.paascloud.provider.service.UacUserService;
+import com.cldt.utils.PublicUtil;
+import com.cldt.base.dto.LoginAuthDto;
+import com.cldt.base.enums.ErrorCodeEnum;
+import com.cldt.provider.model.constant.UacConstant;
+import com.cldt.provider.model.domain.UacUser;
+import com.cldt.provider.model.dto.user.LoginRespDto;
+import com.cldt.provider.model.exceptions.UacBizException;
+import com.cldt.provider.model.vo.MenuVo;
+import com.cldt.provider.security.SecurityUtils;
+import com.cldt.provider.service.UacLoginService;
+import com.cldt.provider.service.UacMenuService;
+import com.cldt.provider.service.UacUserService;
 import lombok.extern.slf4j.Slf4j;
 import org.apache.commons.lang.StringUtils;
 import org.springframework.stereotype.Service;
@@ -36,7 +36,7 @@ import java.util.List;
 /**
  * The class Uac login service.
  *
- * @author paascloud.net@gmail.com
+ * @author cldt@gmail.com
  */
 @Slf4j
 @Service

@@ -1,4 +1,4 @@
-package com.paascloud.provider.model.dto.menu;
+package com.cldt.provider.model.dto.menu;
 
 import lombok.Data;
 
@@ -8,7 +8,7 @@ import java.util.List;
 /**
  * The class User menu dto.
  *
- * @author paascloud.net@gmail.com
+ * @author cldt@gmail.com
  */
 @Data
 public class UserMenuDto implements Serializable {

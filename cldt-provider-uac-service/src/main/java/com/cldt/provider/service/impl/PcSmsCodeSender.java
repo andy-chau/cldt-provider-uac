@@ -1,10 +1,10 @@
 
-package com.paascloud.provider.service.impl;
+package com.cldt.provider.service.impl;
 
-import com.paascloud.base.constant.AliyunSmsConstants;
-import com.paascloud.provider.model.dto.sms.SmsMessage;
-import com.paascloud.provider.service.SmsService;
-import com.paascloud.security.core.validate.code.sms.SmsCodeSender;
+import com.cldt.base.constant.AliyunSmsConstants;
+import com.cldt.provider.model.dto.sms.SmsMessage;
+import com.cldt.provider.service.SmsService;
+import com.cldt.security.core.validate.code.sms.SmsCodeSender;
 import lombok.extern.slf4j.Slf4j;
 
 import javax.annotation.Resource;
@@ -12,7 +12,7 @@ import javax.annotation.Resource;
 /**
  * 默认的短信验证码发送器
  *
- * @author paascloud.net @gmail.com
+ * @author cldt @gmail.com
  */
 @Slf4j
 public class PcSmsCodeSender implements SmsCodeSender {

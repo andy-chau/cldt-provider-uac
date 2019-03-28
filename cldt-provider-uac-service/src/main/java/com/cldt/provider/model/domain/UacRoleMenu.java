@@ -1,4 +1,4 @@
-package com.paascloud.provider.model.domain;
+package com.cldt.provider.model.domain;
 
 import lombok.Data;
 import org.apache.ibatis.type.Alias;
@@ -11,7 +11,7 @@ import java.io.Serializable;
 /**
  * The class Uac role menu.
  *
- * @author paascloud.net@gmail.com
+ * @author cldt@gmail.com
  */
 @Data
 @Table(name = "pc_uac_role_menu")

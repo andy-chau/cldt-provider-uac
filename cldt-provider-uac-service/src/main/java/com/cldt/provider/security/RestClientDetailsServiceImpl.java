@@ -1,7 +1,7 @@
-package com.paascloud.provider.security;
+package com.cldt.provider.security;
 
-import com.paascloud.security.core.properties.OAuth2ClientProperties;
-import com.paascloud.security.core.properties.SecurityProperties;
+import com.cldt.security.core.properties.OAuth2ClientProperties;
+import com.cldt.security.core.properties.SecurityProperties;
 import lombok.extern.slf4j.Slf4j;
 import org.apache.commons.lang3.ArrayUtils;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -16,7 +16,7 @@ import javax.annotation.PostConstruct;
 /**
  * The class Rest client details service.
  *
- * @author paascloud.net @gmail.com
+ * @author cldt @gmail.com
  */
 @Slf4j
 @Component("restClientDetailsService")

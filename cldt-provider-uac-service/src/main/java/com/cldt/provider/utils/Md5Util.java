@@ -1,15 +1,15 @@
 /*
- * Copyright (c) 2018. paascloud.net All Rights Reserved.
- * 项目名称：paascloud快速搭建企业级分布式微服务平台
+ * Copyright (c) 2018. cldt All Rights Reserved.
+
  * 类名称：Md5Util.java
- * 创建人：刘兆明
- * 联系方式：paascloud.net@gmail.com
- * 开源地址: https://github.com/paascloud
- * 博客地址: http://blog.paascloud.net
- * 项目官网: http://paascloud.net
+
+ * 联系方式：cldt@gmail.com
+
+ * 博客地址: http://blog.cldt
+ * 项目官网: http://cldt
  */
 
-package com.paascloud.provider.utils;
+package com.cldt.provider.utils;
 
 import lombok.AccessLevel;
 import lombok.NoArgsConstructor;
@@ -20,7 +20,7 @@ import org.springframework.security.crypto.bcrypt.BCryptPasswordEncoder;
 /**
  * The class Md 5 util.
  *
- * @author paascloud.net @gmail.com
+ * @author cldt @gmail.com
  */
 @Slf4j
 @NoArgsConstructor(access = AccessLevel.PRIVATE)

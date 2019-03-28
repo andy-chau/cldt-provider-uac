@@ -1,8 +1,8 @@
-package com.paascloud.provider.security;
+package com.cldt.provider.security;
 
-import com.paascloud.provider.model.domain.UacUser;
-import com.paascloud.provider.service.UacUserService;
-import com.paascloud.security.core.SecurityUser;
+import com.cldt.provider.model.domain.UacUser;
+import com.cldt.provider.service.UacUserService;
+import com.cldt.security.core.SecurityUser;
 import org.springframework.security.authentication.BadCredentialsException;
 import org.springframework.security.core.GrantedAuthority;
 import org.springframework.security.core.userdetails.UserDetails;
@@ -15,7 +15,7 @@ import java.util.Collection;
 /**
  * The class Uac user details service.
  *
- * @author paascloud.net @gmail.com
+ * @author cldt @gmail.com
  */
 @Component
 public class UacUserDetailsServiceImpl implements UserDetailsService {

@@ -1,4 +1,4 @@
-package com.paascloud.provider.model.dto.base;
+package com.cldt.provider.model.dto.base;
 
 import io.swagger.annotations.ApiModel;
 import io.swagger.annotations.ApiModelProperty;
@@ -9,7 +9,7 @@ import java.io.Serializable;
 /**
  * The class Modify status dto.
  *
- * @author paascloud.net@gmail.com
+ * @author cldt@gmail.com
  */
 @Data
 @ApiModel(value = "更改状态")

@@ -1,22 +1,22 @@
 /*
- * Copyright (c) 2018. paascloud.net All Rights Reserved.
- * 项目名称：paascloud快速搭建企业级分布式微服务平台
+ * Copyright (c) 2018. cldt All Rights Reserved.
+
  * 类名称：UacPushMessageListener.java
- * 创建人：刘兆明
- * 联系方式：paascloud.net@gmail.com
- * 开源地址: https://github.com/paascloud
- * 博客地址: http://blog.paascloud.net
- * 项目官网: http://paascloud.net
+
+ * 联系方式：cldt@gmail.com
+
+ * 博客地址: http://blog.cldt
+ * 项目官网: http://cldt
  */
 
-package com.paascloud.provider.mq.consumer.listener;
+package com.cldt.provider.mq.consumer.listener;
 
-import com.paascloud.PublicUtil;
-import com.paascloud.base.constant.AliyunMqTopicConstants;
-import com.paascloud.core.mq.MqMessage;
-import com.paascloud.provider.annotation.MqConsumerStore;
-import com.paascloud.provider.service.MqMessageService;
-import com.paascloud.provider.service.RedisService;
+import com.cldt.utils.PublicUtil;
+import com.cldt.base.constant.AliyunMqTopicConstants;
+import com.cldt.common.core.mq.MqMessage;
+//import com.cldt.provider.annotation.MqConsumerStore;
+//import com.cldt.provider.service.MqMessageService;
+import com.cldt.provider.service.RedisService;
 import lombok.extern.slf4j.Slf4j;
 import org.apache.rocketmq.client.consumer.listener.ConsumeConcurrentlyContext;
 import org.apache.rocketmq.client.consumer.listener.ConsumeConcurrentlyStatus;
@@ -32,13 +32,13 @@ import java.util.concurrent.TimeUnit;
 /**
  * The class Uac push message listener.
  *
- * @author paascloud.net @gmail.com
+ * @author cldt @gmail.com
  */
 @Slf4j
 @Component
 public class UacPushMessageListener implements MessageListenerConcurrently {
-	@Resource
-	private MqMessageService mqMessageService;
+//	@Resource
+//	private MqMessageService mqMessageService;
 	@Resource
 	private RedisService redisService;
 
@@ -51,7 +51,7 @@ public class UacPushMessageListener implements MessageListenerConcurrently {
 	 * @return the consume concurrently status
 	 */
 	@Override
-	@MqConsumerStore
+//	@MqConsumerStore
 	public ConsumeConcurrentlyStatus consumeMessage(List<MessageExt> messageExtList, ConsumeConcurrentlyContext consumeConcurrentlyContext) {
 		MessageExt msg = messageExtList.get(0);
 		String body = new String(msg.getBody());
@@ -67,7 +67,7 @@ public class UacPushMessageListener implements MessageListenerConcurrently {
 				return ConsumeConcurrentlyStatus.CONSUME_SUCCESS;
 			}
 			if (AliyunMqTopicConstants.MqTopicEnum.TPC_TOPIC.getTopic().equals(topicName)) {
-				mqMessageService.deleteMessageTopic(body, tags);
+//				mqMessageService.deleteMessageTopic(body, tags);
 			} else {
 				log.info("OPC订单信息消 topicName={} 不存在", topicName);
 			}

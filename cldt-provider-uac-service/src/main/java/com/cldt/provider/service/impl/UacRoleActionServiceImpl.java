@@ -1,11 +1,11 @@
-package com.paascloud.provider.service.impl;
+package com.cldt.provider.service.impl;
 
-import com.paascloud.base.enums.ErrorCodeEnum;
-import com.paascloud.core.support.BaseService;
-import com.paascloud.provider.mapper.UacRoleActionMapper;
-import com.paascloud.provider.model.domain.UacRoleAction;
-import com.paascloud.provider.model.exceptions.UacBizException;
-import com.paascloud.provider.service.UacRoleActionService;
+import com.cldt.base.enums.ErrorCodeEnum;
+import com.cldt.common.core.support.BaseService;
+import com.cldt.provider.mapper.UacRoleActionMapper;
+import com.cldt.provider.model.domain.UacRoleAction;
+import com.cldt.provider.model.exceptions.UacBizException;
+import com.cldt.provider.service.UacRoleActionService;
 import org.springframework.stereotype.Service;
 import org.springframework.transaction.annotation.Transactional;
 
@@ -16,7 +16,7 @@ import java.util.Set;
 /**
  * The class Uac role action service.
  *
- * @author paascloud.net@gmail.com
+ * @author cldt@gmail.com
  */
 @Service
 @Transactional(rollbackFor = Exception.class)

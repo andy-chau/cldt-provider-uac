@@ -1,31 +1,31 @@
 /*
- * Copyright (c) 2018. paascloud.net All Rights Reserved.
- * 项目名称：paascloud快速搭建企业级分布式微服务平台
+ * Copyright (c) 2018. cldt All Rights Reserved.
+
  * 类名称：AuthRestController.java
- * 创建人：刘兆明
- * 联系方式：paascloud.net@gmail.com
- * 开源地址: https://github.com/paascloud
- * 博客地址: http://blog.paascloud.net
- * 项目官网: http://paascloud.net
+
+ * 联系方式：cldt@gmail.com
+
+ * 博客地址: http://blog.cldt
+ * 项目官网: http://cldt
  */
 
-package com.paascloud.provider.web.admin;
+package com.cldt.provider.web.admin;
 
 import com.google.common.base.Preconditions;
-import com.paascloud.base.dto.CheckValidDto;
-import com.paascloud.core.annotation.OperationLogDto;
-import com.paascloud.core.support.BaseController;
-import com.paascloud.provider.model.constant.UacApiConstant;
-import com.paascloud.provider.model.domain.UacUser;
-import com.paascloud.provider.model.dto.user.ResetLoginPwdDto;
-import com.paascloud.provider.model.dto.user.UserRegisterDto;
-import com.paascloud.provider.model.enums.UacUserStatusEnum;
-import com.paascloud.provider.service.EmailService;
-import com.paascloud.provider.service.SmsService;
-import com.paascloud.provider.service.UacLogService;
-import com.paascloud.provider.service.UacUserService;
-import com.paascloud.wrapper.WrapMapper;
-import com.paascloud.wrapper.Wrapper;
+import com.cldt.base.dto.CheckValidDto;
+import com.cldt.common.core.annotation.OperationLogDto;
+import com.cldt.common.core.support.BaseController;
+import com.cldt.provider.model.constant.UacApiConstant;
+import com.cldt.provider.model.domain.UacUser;
+import com.cldt.provider.model.dto.user.ResetLoginPwdDto;
+import com.cldt.provider.model.dto.user.UserRegisterDto;
+import com.cldt.provider.model.enums.UacUserStatusEnum;
+import com.cldt.provider.service.EmailService;
+import com.cldt.provider.service.SmsService;
+import com.cldt.provider.service.UacLogService;
+import com.cldt.provider.service.UacUserService;
+import com.cldt.utils.wrapper.WrapMapper;
+import com.cldt.utils.wrapper.Wrapper;
 import io.swagger.annotations.Api;
 import io.swagger.annotations.ApiOperation;
 import org.apache.commons.lang3.StringUtils;
@@ -39,7 +39,7 @@ import javax.servlet.http.HttpServletResponse;
 /**
  * 不认证的URL请求.
  *
- * @author paascloud.net @gmail.com
+ * @author cldt @gmail.com
  */
 @RestController
 @RequestMapping(value = "/auth")

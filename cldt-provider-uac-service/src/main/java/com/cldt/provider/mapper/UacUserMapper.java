@@ -1,19 +1,19 @@
 /*
- * Copyright (c) 2018. paascloud.net All Rights Reserved.
- * 项目名称：paascloud快速搭建企业级分布式微服务平台
+ * Copyright (c) 2018. cldt All Rights Reserved.
+
  * 类名称：UacUserMapper.java
- * 创建人：刘兆明
- * 联系方式：paascloud.net@gmail.com
- * 开源地址: https://github.com/paascloud
- * 博客地址: http://blog.paascloud.net
- * 项目官网: http://paascloud.net
+
+ * 联系方式：cldt@gmail.com
+
+ * 博客地址: http://blog.cldt
+ * 项目官网: http://cldt
  */
 
-package com.paascloud.provider.mapper;
+package com.cldt.provider.mapper;
 
-import com.paascloud.core.mybatis.MyMapper;
-import com.paascloud.provider.model.domain.UacUser;
-import com.paascloud.provider.model.dto.user.BindRoleDto;
+import com.cldt.common.core.mybatis.MyMapper;
+import com.cldt.provider.model.domain.UacUser;
+import com.cldt.provider.model.dto.user.BindRoleDto;
 import org.apache.ibatis.annotations.Mapper;
 import org.apache.ibatis.annotations.Param;
 import org.springframework.stereotype.Component;
@@ -24,7 +24,7 @@ import java.util.Map;
 /**
  * The interface Uac user mapper.
  *
- * @author paascloud.net @gmail.com
+ * @author cldt @gmail.com
  */
 @Mapper
 @Component

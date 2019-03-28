@@ -1,23 +1,23 @@
-package com.paascloud.provider.service.impl;
+package com.cldt.provider.service.impl;
 
 import com.github.pagehelper.PageHelper;
 import com.github.pagehelper.PageInfo;
 import com.google.common.base.Joiner;
 import com.google.common.base.Preconditions;
-import com.paascloud.PublicUtil;
-import com.paascloud.base.constant.GlobalConstant;
-import com.paascloud.base.dto.LoginAuthDto;
-import com.paascloud.base.enums.ErrorCodeEnum;
-import com.paascloud.core.support.BaseService;
-import com.paascloud.provider.mapper.UacActionMapper;
-import com.paascloud.provider.mapper.UacRoleActionMapper;
-import com.paascloud.provider.model.domain.UacAction;
-import com.paascloud.provider.model.domain.UacMenu;
-import com.paascloud.provider.model.dto.action.ActionMainQueryDto;
-import com.paascloud.provider.model.exceptions.UacBizException;
-import com.paascloud.provider.model.vo.ActionVo;
-import com.paascloud.provider.model.vo.MenuVo;
-import com.paascloud.provider.service.UacActionService;
+import com.cldt.utils.PublicUtil;
+import com.cldt.base.constant.GlobalConstant;
+import com.cldt.base.dto.LoginAuthDto;
+import com.cldt.base.enums.ErrorCodeEnum;
+import com.cldt.common.core.support.BaseService;
+import com.cldt.provider.mapper.UacActionMapper;
+import com.cldt.provider.mapper.UacRoleActionMapper;
+import com.cldt.provider.model.domain.UacAction;
+import com.cldt.provider.model.domain.UacMenu;
+import com.cldt.provider.model.dto.action.ActionMainQueryDto;
+import com.cldt.provider.model.exceptions.UacBizException;
+import com.cldt.provider.model.vo.ActionVo;
+import com.cldt.provider.model.vo.MenuVo;
+import com.cldt.provider.service.UacActionService;
 import org.apache.commons.lang3.StringUtils;
 import org.springframework.beans.BeanUtils;
 import org.springframework.stereotype.Service;
@@ -31,7 +31,7 @@ import java.util.Objects;
 /**
  * The class Uac action service.
  *
- * @author paascloud.net@gmail.com
+ * @author cldt@gmail.com
  */
 @Service
 @Transactional(rollbackFor = Exception.class)

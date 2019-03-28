@@ -1,8 +1,8 @@
-package com.paascloud.provider.service.impl;
+package com.cldt.provider.service.impl;
 
 import com.google.common.base.Preconditions;
-import com.paascloud.base.constant.GlobalConstant;
-import com.paascloud.provider.service.RedisService;
+import com.cldt.base.constant.GlobalConstant;
+import com.cldt.provider.service.RedisService;
 import lombok.extern.slf4j.Slf4j;
 import org.apache.commons.lang3.StringUtils;
 import org.springframework.data.redis.core.StringRedisTemplate;
@@ -15,7 +15,7 @@ import java.util.concurrent.TimeUnit;
 /**
  * The class Redis service.
  *
- * @author paascloud.net@gmail.com
+ * @author cldt@gmail.com
  */
 @Slf4j
 @Service

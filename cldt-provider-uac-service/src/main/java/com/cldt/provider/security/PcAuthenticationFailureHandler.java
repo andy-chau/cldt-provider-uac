@@ -1,7 +1,7 @@
-package com.paascloud.provider.security;
+package com.cldt.provider.security;
 
 import com.fasterxml.jackson.databind.ObjectMapper;
-import com.paascloud.wrapper.WrapMapper;
+import com.cldt.utils.wrapper.WrapMapper;
 import org.springframework.http.HttpStatus;
 import org.springframework.security.core.AuthenticationException;
 import org.springframework.security.web.authentication.SimpleUrlAuthenticationFailureHandler;
@@ -16,7 +16,7 @@ import java.io.IOException;
 /**
  * APP环境下认证失败处理器
  *
- * @author paascloud.net @gmail.com
+ * @author cldt @gmail.com
  */
 @Component("pcAuthenticationFailureHandler")
 public class PcAuthenticationFailureHandler extends SimpleUrlAuthenticationFailureHandler {

@@ -1,34 +1,34 @@
 /*
- * Copyright (c) 2018. paascloud.net All Rights Reserved.
- * 项目名称：paascloud快速搭建企业级分布式微服务平台
+ * Copyright (c) 2018. cldt All Rights Reserved.
+
  * 类名称：UacRoleMainController.java
- * 创建人：刘兆明
- * 联系方式：paascloud.net@gmail.com
- * 开源地址: https://github.com/paascloud
- * 博客地址: http://blog.paascloud.net
- * 项目官网: http://paascloud.net
+
+ * 联系方式：cldt@gmail.com
+
+ * 博客地址: http://blog.cldt
+ * 项目官网: http://cldt
  */
 
-package com.paascloud.provider.web.admin;
+package com.cldt.provider.web.admin;
 
 import com.github.pagehelper.PageHelper;
 import com.github.pagehelper.PageInfo;
-import com.paascloud.base.dto.LoginAuthDto;
-import com.paascloud.base.enums.ErrorCodeEnum;
-import com.paascloud.core.annotation.LogAnnotation;
-import com.paascloud.core.annotation.ValidateAnnotation;
-import com.paascloud.core.support.BaseController;
-import com.paascloud.core.utils.RequestUtil;
-import com.paascloud.provider.model.domain.UacRole;
-import com.paascloud.provider.model.domain.UacRoleUser;
-import com.paascloud.provider.model.dto.base.ModifyStatusDto;
-import com.paascloud.provider.model.enums.UacRoleStatusEnum;
-import com.paascloud.provider.model.exceptions.UacBizException;
-import com.paascloud.provider.model.vo.RoleVo;
-import com.paascloud.provider.service.UacRoleService;
-import com.paascloud.provider.service.UacRoleUserService;
-import com.paascloud.wrapper.WrapMapper;
-import com.paascloud.wrapper.Wrapper;
+import com.cldt.base.dto.LoginAuthDto;
+import com.cldt.base.enums.ErrorCodeEnum;
+import com.cldt.common.core.annotation.LogAnnotation;
+import com.cldt.common.core.annotation.ValidateAnnotation;
+import com.cldt.common.core.support.BaseController;
+import com.cldt.common.core.utils.RequestUtil;
+import com.cldt.provider.model.domain.UacRole;
+import com.cldt.provider.model.domain.UacRoleUser;
+import com.cldt.provider.model.dto.base.ModifyStatusDto;
+import com.cldt.provider.model.enums.UacRoleStatusEnum;
+import com.cldt.provider.model.exceptions.UacBizException;
+import com.cldt.provider.model.vo.RoleVo;
+import com.cldt.provider.service.UacRoleService;
+import com.cldt.provider.service.UacRoleUserService;
+import com.cldt.utils.wrapper.WrapMapper;
+import com.cldt.utils.wrapper.Wrapper;
 import io.swagger.annotations.Api;
 import io.swagger.annotations.ApiOperation;
 import io.swagger.annotations.ApiParam;
@@ -42,7 +42,7 @@ import java.util.List;
 /**
  * 角色管理主页面.
  *
- * @author paascloud.net @gmail.com
+ * @author cldt @gmail.com
  */
 @RestController
 @RequestMapping(value = "/role", produces = MediaType.APPLICATION_JSON_UTF8_VALUE)

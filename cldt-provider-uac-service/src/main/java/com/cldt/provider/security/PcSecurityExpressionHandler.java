@@ -1,4 +1,4 @@
-package com.paascloud.provider.security;
+package com.cldt.provider.security;
 
 import org.springframework.context.ApplicationContext;
 import org.springframework.context.annotation.Bean;
@@ -8,7 +8,7 @@ import org.springframework.security.oauth2.provider.expression.OAuth2WebSecurity
 /**
  * The class My o auth 2 web security expression handler.
  *
- * @author paascloud.net @gmail.com
+ * @author cldt @gmail.com
  */
 @Configuration
 public class PcSecurityExpressionHandler extends OAuth2WebSecurityExpressionHandler {

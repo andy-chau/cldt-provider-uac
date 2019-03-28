@@ -1,33 +1,33 @@
-package com.paascloud.provider.service.impl;
+package com.cldt.provider.service.impl;
 
 import com.google.common.base.Preconditions;
 import com.google.common.collect.Lists;
 import com.google.common.collect.Sets;
-import com.paascloud.Collections3;
-import com.paascloud.PublicUtil;
-import com.paascloud.base.constant.GlobalConstant;
-import com.paascloud.base.dto.LoginAuthDto;
-import com.paascloud.base.enums.ErrorCodeEnum;
-import com.paascloud.core.support.BaseService;
-import com.paascloud.provider.mapper.UacGroupMapper;
-import com.paascloud.provider.mapper.UacGroupUserMapper;
-import com.paascloud.provider.mapper.UacRoleMapper;
-import com.paascloud.provider.mapper.UacRoleUserMapper;
-import com.paascloud.provider.model.domain.UacGroup;
-import com.paascloud.provider.model.domain.UacGroupUser;
-import com.paascloud.provider.model.domain.UacUser;
-import com.paascloud.provider.model.dto.group.GroupBindUserDto;
-import com.paascloud.provider.model.dto.group.GroupBindUserReqDto;
-import com.paascloud.provider.model.dto.role.BindUserDto;
-import com.paascloud.provider.model.dto.user.IdStatusDto;
-import com.paascloud.provider.model.enums.UacGroupStatusEnum;
-import com.paascloud.provider.model.exceptions.UacBizException;
-import com.paascloud.provider.model.vo.GroupZtreeVo;
-import com.paascloud.provider.model.vo.MenuVo;
-import com.paascloud.provider.service.MdcAddressService;
-import com.paascloud.provider.service.UacGroupService;
-import com.paascloud.provider.service.UacUserService;
-import com.paascloud.provider.utils.TreeUtil;
+import com.cldt.utils.Collections3;
+import com.cldt.utils.PublicUtil;
+import com.cldt.base.constant.GlobalConstant;
+import com.cldt.base.dto.LoginAuthDto;
+import com.cldt.base.enums.ErrorCodeEnum;
+import com.cldt.common.core.support.BaseService;
+import com.cldt.provider.mapper.UacGroupMapper;
+import com.cldt.provider.mapper.UacGroupUserMapper;
+import com.cldt.provider.mapper.UacRoleMapper;
+import com.cldt.provider.mapper.UacRoleUserMapper;
+import com.cldt.provider.model.domain.UacGroup;
+import com.cldt.provider.model.domain.UacGroupUser;
+import com.cldt.provider.model.domain.UacUser;
+import com.cldt.provider.model.dto.group.GroupBindUserDto;
+import com.cldt.provider.model.dto.group.GroupBindUserReqDto;
+import com.cldt.provider.model.dto.role.BindUserDto;
+import com.cldt.provider.model.dto.user.IdStatusDto;
+import com.cldt.provider.model.enums.UacGroupStatusEnum;
+import com.cldt.provider.model.exceptions.UacBizException;
+import com.cldt.provider.model.vo.GroupZtreeVo;
+import com.cldt.provider.model.vo.MenuVo;
+import com.cldt.provider.service.MdcAddressService;
+import com.cldt.provider.service.UacGroupService;
+import com.cldt.provider.service.UacUserService;
+import com.cldt.provider.utils.TreeUtil;
 import org.springframework.stereotype.Service;
 import org.springframework.transaction.annotation.Transactional;
 import org.springframework.util.StringUtils;
@@ -38,7 +38,7 @@ import java.util.*;
 /**
  * The class Uac group service.
  *
- * @author paascloud.net@gmail.com
+ * @author cldt@gmail.com
  */
 @Service
 @Transactional(rollbackFor = Exception.class)
@@ -402,7 +402,7 @@ public class UacGroupServiceImpl extends BaseService<UacGroup> implements UacGro
 		int level = 0;
 		for (Long addressId : addressList) {
 			// 根据地址ID获取地址名称
-			String addressName = mdcAddressService.getAddressById(addressId).getName();
+			String addressName = null;// mdcAddressService.getAddressById(addressId).getName();
 			if (level == 0) {
 				uacGroup.setProvinceId(addressId);
 				uacGroup.setProvinceName(addressName);

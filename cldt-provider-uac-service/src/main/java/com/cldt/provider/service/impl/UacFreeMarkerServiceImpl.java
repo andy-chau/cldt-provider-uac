@@ -1,7 +1,7 @@
-package com.paascloud.provider.service.impl;
+package com.cldt.provider.service.impl;
 
 import com.google.common.base.Preconditions;
-import com.paascloud.provider.service.UacFreeMarkerService;
+import com.cldt.provider.service.UacFreeMarkerService;
 import freemarker.template.Configuration;
 import freemarker.template.Template;
 import freemarker.template.TemplateException;
@@ -16,7 +16,7 @@ import java.util.Map;
 /**
  * The class Uac free marker service.
  *
- * @author paascloud.net@gmail.com
+ * @author cldt@gmail.com
  */
 @Service
 public class UacFreeMarkerServiceImpl implements UacFreeMarkerService {

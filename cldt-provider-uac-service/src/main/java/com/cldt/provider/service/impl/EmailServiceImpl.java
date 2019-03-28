@@ -1,25 +1,25 @@
-package com.paascloud.provider.service.impl;
+package com.cldt.provider.service.impl;
 
 import com.google.common.base.Preconditions;
 import com.google.common.collect.Maps;
 import com.google.common.collect.Sets;
-import com.paascloud.HttpAesUtil;
-import com.paascloud.PubUtils;
-import com.paascloud.RandomUtil;
-import com.paascloud.RedisKeyUtil;
-import com.paascloud.base.constant.AliyunMqTopicConstants;
-import com.paascloud.base.enums.ErrorCodeEnum;
-import com.paascloud.core.generator.UniqueIdGenerator;
-import com.paascloud.provider.manager.UserManager;
-import com.paascloud.provider.model.domain.MqMessageData;
-import com.paascloud.provider.model.domain.UacUser;
-import com.paascloud.provider.model.dto.email.SendEmailMessage;
-import com.paascloud.provider.model.enums.UacEmailTemplateEnum;
-import com.paascloud.provider.model.exceptions.UacBizException;
-import com.paascloud.provider.mq.producer.EmailProducer;
-import com.paascloud.provider.service.EmailService;
-import com.paascloud.provider.service.RedisService;
-import com.paascloud.provider.service.UacUserService;
+import com.cldt.utils.HttpAesUtil;
+import com.cldt.utils.PubUtils;
+import com.cldt.utils.RandomUtil;
+import com.cldt.utils.RedisKeyUtil;
+import com.cldt.base.constant.AliyunMqTopicConstants;
+import com.cldt.base.enums.ErrorCodeEnum;
+import com.cldt.zk.generator.UniqueIdGenerator;
+import com.cldt.provider.manager.UserManager;
+//import com.cldt.provider.model.domain.MqMessageData;
+import com.cldt.provider.model.domain.UacUser;
+import com.cldt.provider.model.dto.email.SendEmailMessage;
+import com.cldt.provider.model.enums.UacEmailTemplateEnum;
+import com.cldt.provider.model.exceptions.UacBizException;
+import com.cldt.provider.mq.producer.EmailProducer;
+import com.cldt.provider.service.EmailService;
+import com.cldt.provider.service.RedisService;
+import com.cldt.provider.service.UacUserService;
 import com.xiaoleilu.hutool.date.DateUtil;
 import lombok.extern.slf4j.Slf4j;
 import org.apache.commons.lang3.StringUtils;
@@ -37,7 +37,7 @@ import java.util.concurrent.TimeUnit;
 /**
  * The class Email service.
  *
- * @author paascloud.net@gmail.com
+ * @author cldt@gmail.com
  */
 @Service
 @Slf4j
@@ -46,7 +46,7 @@ public class EmailServiceImpl implements EmailService {
 	private EmailProducer emailProducer;
 	@Resource
 	private UacUserService uacUserService;
-	@Value("${paascloud.auth.rest-pwd-url}")
+	@Value("${cldt.auth.rest-pwd-url}")
 	private String resetPwdUrl;
 	@Resource
 	private RedisTemplate<String, Object> redisTemplate;
@@ -81,8 +81,8 @@ public class EmailServiceImpl implements EmailService {
 
 		Set<String> to = Sets.newHashSet();
 		to.add(email);
-		MqMessageData messageData = emailProducer.sendEmailMq(to, UacEmailTemplateEnum.RESET_PWD_SEND_MAIL, AliyunMqTopicConstants.MqTagEnum.FORGOT_PASSWORD_AUTH_CODE, param);
-		userManager.submitResetPwdEmail(messageData);
+//		MqMessageData messageData = emailProducer.sendEmailMq(to, UacEmailTemplateEnum.RESET_PWD_SEND_MAIL, AliyunMqTopicConstants.MqTagEnum.FORGOT_PASSWORD_AUTH_CODE, param);
+//		userManager.submitResetPwdEmail(messageData);
 	}
 
 	@Override
@@ -120,8 +120,8 @@ public class EmailServiceImpl implements EmailService {
 		Set<String> to = Sets.newHashSet();
 		to.add(email);
 
-		MqMessageData mqMessageData = emailProducer.sendEmailMq(to, UacEmailTemplateEnum.RESET_USER_EMAIL, AliyunMqTopicConstants.MqTagEnum.RESET_LOGIN_PWD, param);
-		userManager.sendEmailCode(mqMessageData);
+//		MqMessageData mqMessageData = emailProducer.sendEmailMq(to, UacEmailTemplateEnum.RESET_USER_EMAIL, AliyunMqTopicConstants.MqTagEnum.RESET_LOGIN_PWD, param);
+//		userManager.sendEmailCode(mqMessageData);
 	}
 
 	@Override

@@ -1,19 +1,18 @@
-package com.paascloud.provider.model.dto.omc;
+package com.cldt.provider.model.dto.omc;
 
-import com.paascloud.provider.model.vo.CartProductVo;
-import lombok.Data;
-
+//import com.cldt.provider.model.vo.CartProductVo;
 import java.io.Serializable;
-import java.util.List;
+
+import lombok.Data;
 
 
 /**
  * The class Cart list query.
  *
- * @author paascloud.net@gmail.com
+ * @author cldt@gmail.com
  */
 @Data
 public class CartListQuery implements Serializable {
 	private static final long serialVersionUID = -5968284112162772265L;
-	private List<CartProductVo> cartProductVoList;
+//	private List<CartProductVo> cartProductVoList;
 }

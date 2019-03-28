@@ -1,48 +1,52 @@
 /*
- * Copyright (c) 2018. paascloud.net All Rights Reserved.
- * 项目名称：paascloud快速搭建企业级分布式微服务平台
+ * Copyright (c) 2018. cldt All Rights Reserved.
+
  * 类名称：MallAuthRestController.java
- * 创建人：刘兆明
- * 联系方式：paascloud.net@gmail.com
- * 开源地址: https://github.com/paascloud
- * 博客地址: http://blog.paascloud.net
- * 项目官网: http://paascloud.net
+
+ * 联系方式：cldt@gmail.com
+
+ * 博客地址: http://blog.cldt
+ * 项目官网: http://cldt
  */
 
-package com.paascloud.provider.web.mall;
+package com.cldt.provider.web.mall;
 
 import com.github.pagehelper.PageInfo;
-import com.paascloud.core.support.BaseController;
-import com.paascloud.provider.model.dto.ProductCategoryDto;
-import com.paascloud.provider.model.dto.ProductReqDto;
-import com.paascloud.provider.model.vo.ProductDetailVo;
-import com.paascloud.provider.service.MdcProductCategoryQueryFeignApi;
-import com.paascloud.provider.service.MdcProductQueryFeignApi;
-import com.paascloud.wrapper.Wrapper;
+import com.cldt.common.core.support.BaseController;
+import com.cldt.utils.wrapper.WrapMapper;
+//import com.cldt.provider.model.dto.ProductCategoryDto;
+//import com.cldt.provider.model.dto.ProductReqDto;
+//import com.cldt.provider.model.vo.ProductDetailVo;
+//import com.cldt.provider.service.MdcProductCategoryQueryFeignApi;
+//import com.cldt.provider.service.MdcProductQueryFeignApi;
+import com.cldt.utils.wrapper.Wrapper;
+
 import io.swagger.annotations.Api;
 import io.swagger.annotations.ApiOperation;
+
 import org.springframework.http.MediaType;
 import org.springframework.web.bind.annotation.*;
 
 import javax.annotation.Resource;
+
 import java.util.List;
 
 
 /**
  * The class Mall auth rest controller.
  *
- * @author paascloud.net @gmail.com
+ * @author cldt @gmail.com
  */
 @RestController
 @RequestMapping(value = "/auth", produces = MediaType.APPLICATION_JSON_UTF8_VALUE)
 @Api(value = "WEB - MallAuthRestController", produces = MediaType.APPLICATION_JSON_UTF8_VALUE)
 public class MallAuthRestController extends BaseController {
 
-	@Resource
-	private MdcProductQueryFeignApi mdcProductQueryFeignApi;
-
-	@Resource
-	private MdcProductCategoryQueryFeignApi mdcProductCategoryQueryFeignApi;
+//	@Resource
+//	private MdcProductQueryFeignApi mdcProductQueryFeignApi;
+//
+//	@Resource
+//	private MdcProductCategoryQueryFeignApi mdcProductCategoryQueryFeignApi;
 
 	/**
 	 * 查询商品列表.
@@ -51,12 +55,12 @@ public class MallAuthRestController extends BaseController {
 	 *
 	 * @return the product category dto by pid
 	 */
-	@PostMapping(value = "/product/queryProductList")
-	@ApiOperation(httpMethod = "POST", value = "查询商品列表")
-	public Wrapper<PageInfo> queryProductList(@RequestBody ProductReqDto productReqDto) {
-		logger.info("getProductCategoryDtoByPid - 查询分类信息 productReqDto={}", productReqDto);
-		return mdcProductCategoryQueryFeignApi.getProductList(productReqDto);
-	}
+//	@PostMapping(value = "/product/queryProductList")
+//	@ApiOperation(httpMethod = "POST", value = "查询商品列表")
+//	public Wrapper<PageInfo> queryProductList(@RequestBody ProductReqDto productReqDto) {
+//		logger.info("getProductCategoryDtoByPid - 查询分类信息 productReqDto={}", productReqDto);
+//		return mdcProductCategoryQueryFeignApi.getProductList(productReqDto);
+//	}
 
 	/**
 	 * 查询商品详情信息.
@@ -65,12 +69,12 @@ public class MallAuthRestController extends BaseController {
 	 *
 	 * @return the wrapper
 	 */
-	@GetMapping(value = "/product/queryProductDetail/{productId}")
-	@ApiOperation(httpMethod = "POST", value = "查询商品详情信息")
-	public Wrapper<ProductDetailVo> queryProductDetail(@PathVariable Long productId) {
-		logger.info("getProductCategoryDtoByPid - 查询商品详情信息 productId={}", productId);
-		return mdcProductQueryFeignApi.getProductDetail(productId);
-	}
+//	@GetMapping(value = "/product/queryProductDetail/{productId}")
+//	@ApiOperation(httpMethod = "POST", value = "查询商品详情信息")
+//	public Wrapper<ProductDetailVo> queryProductDetail(@PathVariable Long productId) {
+//		logger.info("getProductCategoryDtoByPid - 查询商品详情信息 productId={}", productId);
+//		return mdcProductQueryFeignApi.getProductDetail(productId);
+//	}
 
 	/**
 	 * 查询分类信息.
@@ -79,11 +83,11 @@ public class MallAuthRestController extends BaseController {
 	 *
 	 * @return the product category dto by pid
 	 */
-	@GetMapping(value = "/category/getProductCategoryDtoByPid/{pid}")
-	public Wrapper<List<ProductCategoryDto>> getProductCategoryDtoByPid(@PathVariable Long pid) {
-		logger.info("getProductCategoryDtoByPid - 查询分类信息 pid={}", pid);
-		Wrapper<List<ProductCategoryDto>> productCategoryData = mdcProductCategoryQueryFeignApi.getProductCategoryData(pid);
-		logger.info("productCategoryData={}", productCategoryData);
-		return productCategoryData;
-	}
+//	@GetMapping(value = "/category/getProductCategoryDtoByPid/{pid}")
+//	public Wrapper<List<ProductCategoryDto>> getProductCategoryDtoByPid(@PathVariable Long pid) {
+//		logger.info("getProductCategoryDtoByPid - 查询分类信息 pid={}", pid);
+//		Wrapper<List<ProductCategoryDto>> productCategoryData = mdcProductCategoryQueryFeignApi.getProductCategoryData(pid);
+//		logger.info("productCategoryData={}", productCategoryData);
+//		return productCategoryData;
+//	}
 }

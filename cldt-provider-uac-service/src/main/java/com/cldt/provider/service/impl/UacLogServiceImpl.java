@@ -1,18 +1,18 @@
-package com.paascloud.provider.service.impl;
+package com.cldt.provider.service.impl;
 
 import com.github.pagehelper.PageHelper;
 import com.github.pagehelper.PageInfo;
-import com.paascloud.PublicUtil;
-import com.paascloud.base.dto.LoginAuthDto;
-import com.paascloud.core.annotation.OperationLogDto;
-import com.paascloud.core.support.BaseService;
-import com.paascloud.provider.mapper.UacLogMapper;
-import com.paascloud.provider.model.domain.UacAction;
-import com.paascloud.provider.model.domain.UacLog;
-import com.paascloud.provider.model.dto.log.UacLogMainDto;
-import com.paascloud.provider.service.OpcRpcService;
-import com.paascloud.provider.service.UacActionService;
-import com.paascloud.provider.service.UacLogService;
+import com.cldt.utils.PublicUtil;
+import com.cldt.base.dto.LoginAuthDto;
+import com.cldt.common.core.annotation.OperationLogDto;
+import com.cldt.common.core.support.BaseService;
+import com.cldt.provider.mapper.UacLogMapper;
+import com.cldt.provider.model.domain.UacAction;
+import com.cldt.provider.model.domain.UacLog;
+import com.cldt.provider.model.dto.log.UacLogMainDto;
+import com.cldt.provider.service.OpcRpcService;
+import com.cldt.provider.service.UacActionService;
+import com.cldt.provider.service.UacLogService;
 import org.modelmapper.ModelMapper;
 import org.springframework.stereotype.Service;
 import org.springframework.transaction.annotation.Transactional;
@@ -23,7 +23,7 @@ import java.util.List;
 /**
  * The class Uac log service.
  *
- * @author paascloud.net@gmail.com
+ * @author cldt@gmail.com
  */
 @Service
 @Transactional(rollbackFor = Exception.class)

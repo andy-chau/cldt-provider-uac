@@ -1,30 +1,30 @@
 /*
- * Copyright (c) 2018. paascloud.net All Rights Reserved.
- * 项目名称：paascloud快速搭建企业级分布式微服务平台
+ * Copyright (c) 2018. cldt All Rights Reserved.
+
  * 类名称：UacUserTokenService.java
- * 创建人：刘兆明
- * 联系方式：paascloud.net@gmail.com
- * 开源地址: https://github.com/paascloud
- * 博客地址: http://blog.paascloud.net
- * 项目官网: http://paascloud.net
+
+ * 联系方式：cldt@gmail.com
+
+ * 博客地址: http://blog.cldt
+ * 项目官网: http://cldt
  */
 
-package com.paascloud.provider.service;
+package com.cldt.provider.service;
 
 import com.arronlong.httpclientutil.exception.HttpProcessException;
 import com.github.pagehelper.PageInfo;
-import com.paascloud.base.dto.LoginAuthDto;
-import com.paascloud.base.dto.UserTokenDto;
-import com.paascloud.core.support.IService;
-import com.paascloud.provider.model.domain.UacUserToken;
-import com.paascloud.provider.model.dto.token.TokenMainQueryDto;
+import com.cldt.base.dto.LoginAuthDto;
+import com.cldt.base.dto.UserTokenDto;
+import com.cldt.common.core.support.IService;
+import com.cldt.provider.model.domain.UacUserToken;
+import com.cldt.provider.model.dto.token.TokenMainQueryDto;
 
 import javax.servlet.http.HttpServletRequest;
 
 /**
  * 登录jwt token 管理.
  *
- * @author paascloud.net @gmail.com
+ * @author cldt @gmail.com
  */
 public interface UacUserTokenService extends IService<UacUserToken> {
 	/**

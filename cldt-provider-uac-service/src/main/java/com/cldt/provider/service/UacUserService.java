@@ -1,25 +1,25 @@
 /*
- * Copyright (c) 2018. paascloud.net All Rights Reserved.
- * 项目名称：paascloud快速搭建企业级分布式微服务平台
+ * Copyright (c) 2018. cldt All Rights Reserved.
+
  * 类名称：UacUserService.java
- * 创建人：刘兆明
- * 联系方式：paascloud.net@gmail.com
- * 开源地址: https://github.com/paascloud
- * 博客地址: http://blog.paascloud.net
- * 项目官网: http://paascloud.net
+
+ * 联系方式：cldt@gmail.com
+
+ * 博客地址: http://blog.cldt
+ * 项目官网: http://cldt
  */
 
-package com.paascloud.provider.service;
+package com.cldt.provider.service;
 
 import com.github.pagehelper.PageInfo;
-import com.paascloud.base.dto.LoginAuthDto;
-import com.paascloud.core.support.IService;
-import com.paascloud.provider.model.domain.UacLog;
-import com.paascloud.provider.model.domain.UacUser;
-import com.paascloud.provider.model.dto.menu.UserMenuDto;
-import com.paascloud.provider.model.dto.user.*;
-import com.paascloud.provider.model.vo.UserBindRoleVo;
-import com.paascloud.security.core.SecurityUser;
+import com.cldt.base.dto.LoginAuthDto;
+import com.cldt.common.core.support.IService;
+import com.cldt.provider.model.domain.UacLog;
+import com.cldt.provider.model.domain.UacUser;
+import com.cldt.provider.model.dto.menu.UserMenuDto;
+import com.cldt.provider.model.dto.user.*;
+import com.cldt.provider.model.vo.UserBindRoleVo;
+import com.cldt.security.core.SecurityUser;
 import org.springframework.security.core.GrantedAuthority;
 import org.springframework.security.oauth2.common.OAuth2AccessToken;
 
@@ -30,7 +30,7 @@ import java.util.List;
 /**
  * The interface Uac user service.
  *
- * @author paascloud.net @gmail.com
+ * @author cldt @gmail.com
  */
 public interface UacUserService extends IService<UacUser> {
 	/**

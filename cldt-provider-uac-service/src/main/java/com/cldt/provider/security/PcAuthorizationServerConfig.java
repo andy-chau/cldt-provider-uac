@@ -1,4 +1,4 @@
-package com.paascloud.provider.security;
+package com.cldt.provider.security;
 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.context.annotation.Bean;
@@ -24,7 +24,7 @@ import java.util.List;
 /**
  * The class Pc authorization server config.
  *
- * @author paascloud.net @gmail.com
+ * @author cldt @gmail.com
  */
 @Configuration
 @EnableAuthorizationServer

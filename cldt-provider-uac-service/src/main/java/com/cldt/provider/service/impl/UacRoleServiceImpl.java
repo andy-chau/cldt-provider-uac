@@ -1,26 +1,26 @@
-package com.paascloud.provider.service.impl;
+package com.cldt.provider.service.impl;
 
 import com.google.common.base.Joiner;
 import com.google.common.base.Preconditions;
 import com.google.common.collect.Lists;
 import com.google.common.collect.Sets;
-import com.paascloud.Collections3;
-import com.paascloud.PublicUtil;
-import com.paascloud.base.constant.GlobalConstant;
-import com.paascloud.base.dto.LoginAuthDto;
-import com.paascloud.base.enums.ErrorCodeEnum;
-import com.paascloud.core.support.BaseService;
-import com.paascloud.provider.mapper.UacRoleMapper;
-import com.paascloud.provider.mapper.UacRoleMenuMapper;
-import com.paascloud.provider.model.domain.*;
-import com.paascloud.provider.model.dto.role.*;
-import com.paascloud.provider.model.exceptions.UacBizException;
-import com.paascloud.provider.model.vo.BindAuthVo;
-import com.paascloud.provider.model.vo.MenuVo;
-import com.paascloud.provider.model.vo.RoleVo;
-import com.paascloud.provider.model.vo.role.MenuCountVo;
-import com.paascloud.provider.service.*;
-import com.paascloud.provider.utils.TreeUtil;
+import com.cldt.utils.Collections3;
+import com.cldt.utils.PublicUtil;
+import com.cldt.base.constant.GlobalConstant;
+import com.cldt.base.dto.LoginAuthDto;
+import com.cldt.base.enums.ErrorCodeEnum;
+import com.cldt.common.core.support.BaseService;
+import com.cldt.provider.mapper.UacRoleMapper;
+import com.cldt.provider.mapper.UacRoleMenuMapper;
+import com.cldt.provider.model.domain.*;
+import com.cldt.provider.model.dto.role.*;
+import com.cldt.provider.model.exceptions.UacBizException;
+import com.cldt.provider.model.vo.BindAuthVo;
+import com.cldt.provider.model.vo.MenuVo;
+import com.cldt.provider.model.vo.RoleVo;
+import com.cldt.provider.model.vo.role.MenuCountVo;
+import com.cldt.provider.service.*;
+import com.cldt.provider.utils.TreeUtil;
 import org.springframework.beans.BeanUtils;
 import org.springframework.stereotype.Service;
 import org.springframework.transaction.annotation.Transactional;
@@ -32,7 +32,7 @@ import java.util.*;
 /**
  * The class Uac role service.
  *
- * @author paascloud.net@gmail.com
+ * @author cldt@gmail.com
  */
 @Service
 @Transactional(rollbackFor = Exception.class)

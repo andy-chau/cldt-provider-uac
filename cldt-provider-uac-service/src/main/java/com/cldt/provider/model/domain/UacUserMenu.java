@@ -1,13 +1,13 @@
-package com.paascloud.provider.model.domain;
+package com.cldt.provider.model.domain;
 
-import com.paascloud.core.mybatis.BaseEntity;
+import com.cldt.common.core.mybatis.BaseEntity;
 import lombok.Data;
 import lombok.EqualsAndHashCode;
 
 /**
  * The class Uac user menu.
  *
- * @author paascloud.net@gmail.com
+ * @author cldt@gmail.com
  */
 @EqualsAndHashCode(callSuper = true)
 @Data

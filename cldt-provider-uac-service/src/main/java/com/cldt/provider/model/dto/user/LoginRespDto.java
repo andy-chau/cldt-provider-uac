@@ -1,7 +1,7 @@
-package com.paascloud.provider.model.dto.user;
+package com.cldt.provider.model.dto.user;
 
-import com.paascloud.base.dto.LoginAuthDto;
-import com.paascloud.provider.model.vo.MenuVo;
+import com.cldt.base.dto.LoginAuthDto;
+import com.cldt.provider.model.vo.MenuVo;
 import io.swagger.annotations.ApiModel;
 import io.swagger.annotations.ApiModelProperty;
 import lombok.Data;
@@ -12,7 +12,7 @@ import java.util.List;
 /**
  * The class Login resp dto.
  *
- * @author paascloud.net@gmail.com
+ * @author cldt@gmail.com
  */
 @Data
 @ApiModel(value = "发送短信参数Dto")

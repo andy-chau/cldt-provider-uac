@@ -1,41 +1,18 @@
-package com.paascloud.provider.service.impl;
+package com.cldt.provider.service.impl;
 
-import com.github.pagehelper.PageHelper;
-import com.github.pagehelper.PageInfo;
-import com.google.common.base.Preconditions;
-import com.google.common.collect.Lists;
-import com.google.common.collect.Maps;
-import com.google.common.collect.Sets;
-import com.paascloud.*;
-import com.paascloud.base.constant.AliyunMqTopicConstants;
-import com.paascloud.base.constant.GlobalConstant;
-import com.paascloud.base.dto.LoginAuthDto;
-import com.paascloud.base.enums.ErrorCodeEnum;
-import com.paascloud.core.enums.LogTypeEnum;
-import com.paascloud.core.support.BaseService;
-import com.paascloud.core.utils.RequestUtil;
-import com.paascloud.provider.manager.UserManager;
-import com.paascloud.provider.mapper.UacActionMapper;
-import com.paascloud.provider.mapper.UacMenuMapper;
-import com.paascloud.provider.mapper.UacUserMapper;
-import com.paascloud.provider.mapper.UacUserMenuMapper;
-import com.paascloud.provider.model.domain.*;
-import com.paascloud.provider.model.dto.menu.UserMenuChildrenDto;
-import com.paascloud.provider.model.dto.menu.UserMenuDto;
-import com.paascloud.provider.model.dto.user.*;
-import com.paascloud.provider.model.enums.UacEmailTemplateEnum;
-import com.paascloud.provider.model.enums.UacUserSourceEnum;
-import com.paascloud.provider.model.enums.UacUserStatusEnum;
-import com.paascloud.provider.model.enums.UacUserTypeEnum;
-import com.paascloud.provider.model.exceptions.UacBizException;
-import com.paascloud.provider.model.vo.MenuVo;
-import com.paascloud.provider.model.vo.UserBindRoleVo;
-import com.paascloud.provider.mq.producer.EmailProducer;
-import com.paascloud.provider.service.*;
-import com.paascloud.provider.utils.Md5Util;
-import com.paascloud.security.core.SecurityUser;
-import com.xiaoleilu.hutool.date.DateUtil;
-import eu.bitwalker.useragentutils.UserAgent;
+import java.util.ArrayList;
+import java.util.Collection;
+import java.util.Date;
+import java.util.HashSet;
+import java.util.List;
+import java.util.Map;
+import java.util.Objects;
+import java.util.Set;
+import java.util.concurrent.TimeUnit;
+
+import javax.annotation.Resource;
+import javax.servlet.http.HttpServletRequest;
+
 import org.springframework.beans.factory.annotation.Value;
 import org.springframework.core.task.TaskExecutor;
 import org.springframework.data.redis.core.RedisTemplate;
@@ -46,16 +23,77 @@ import org.springframework.stereotype.Service;
 import org.springframework.transaction.annotation.Transactional;
 import org.springframework.util.StringUtils;
 
-import javax.annotation.Resource;
-import javax.servlet.http.HttpServletRequest;
-import java.util.*;
-import java.util.concurrent.TimeUnit;
+import com.cldt.base.constant.AliyunMqTopicConstants;
+import com.cldt.base.constant.GlobalConstant;
+import com.cldt.base.dto.LoginAuthDto;
+import com.cldt.base.enums.ErrorCodeEnum;
+import com.cldt.common.core.enums.LogTypeEnum;
+import com.cldt.common.core.support.BaseService;
+import com.cldt.common.core.utils.RequestUtil;
+import com.cldt.provider.manager.UserManager;
+import com.cldt.provider.mapper.UacActionMapper;
+import com.cldt.provider.mapper.UacMenuMapper;
+import com.cldt.provider.mapper.UacUserMapper;
+import com.cldt.provider.mapper.UacUserMenuMapper;
+import com.cldt.provider.model.domain.UacAction;
+import com.cldt.provider.model.domain.UacGroupUser;
+import com.cldt.provider.model.domain.UacLog;
+import com.cldt.provider.model.domain.UacRole;
+import com.cldt.provider.model.domain.UacRoleUser;
+import com.cldt.provider.model.domain.UacUser;
+import com.cldt.provider.model.domain.UacUserMenu;
+import com.cldt.provider.model.dto.menu.UserMenuChildrenDto;
+import com.cldt.provider.model.dto.menu.UserMenuDto;
+import com.cldt.provider.model.dto.user.BindRoleDto;
+import com.cldt.provider.model.dto.user.BindUserRolesDto;
+import com.cldt.provider.model.dto.user.ForgetResetPasswordDto;
+import com.cldt.provider.model.dto.user.LoginReqDto;
+import com.cldt.provider.model.dto.user.Perm;
+import com.cldt.provider.model.dto.user.ResetLoginPwdDto;
+import com.cldt.provider.model.dto.user.UserModifyPwdDto;
+import com.cldt.provider.model.dto.user.UserRegisterDto;
+import com.cldt.provider.model.dto.user.UserResetPwdDto;
+import com.cldt.provider.model.enums.UacEmailTemplateEnum;
+import com.cldt.provider.model.enums.UacUserSourceEnum;
+import com.cldt.provider.model.enums.UacUserStatusEnum;
+import com.cldt.provider.model.enums.UacUserTypeEnum;
+import com.cldt.provider.model.exceptions.UacBizException;
+import com.cldt.provider.model.vo.MenuVo;
+import com.cldt.provider.model.vo.UserBindRoleVo;
+import com.cldt.provider.mq.producer.EmailProducer;
+import com.cldt.provider.service.OpcRpcService;
+import com.cldt.provider.service.RedisService;
+import com.cldt.provider.service.UacActionService;
+import com.cldt.provider.service.UacGroupUserService;
+import com.cldt.provider.service.UacLogService;
+import com.cldt.provider.service.UacMenuService;
+import com.cldt.provider.service.UacRoleService;
+import com.cldt.provider.service.UacRoleUserService;
+import com.cldt.provider.service.UacUserMenuService;
+import com.cldt.provider.service.UacUserService;
+import com.cldt.provider.service.UacUserTokenService;
+import com.cldt.provider.utils.Md5Util;
+import com.cldt.security.core.SecurityUser;
+import com.cldt.utils.HttpAesUtil;
+import com.cldt.utils.PubUtils;
+import com.cldt.utils.PublicUtil;
+import com.cldt.utils.RandomUtil;
+import com.cldt.utils.RedisKeyUtil;
+import com.github.pagehelper.PageHelper;
+import com.github.pagehelper.PageInfo;
+import com.google.common.base.Preconditions;
+import com.google.common.collect.Lists;
+import com.google.common.collect.Maps;
+import com.google.common.collect.Sets;
+import com.xiaoleilu.hutool.date.DateUtil;
+
+import eu.bitwalker.useragentutils.UserAgent;
 
 
 /**
  * The class Uac user service.
  *
- * @author paascloud.net@gmail.com
+ * @author cldt@gmail.com
  */
 @Service
 @Transactional(rollbackFor = Exception.class)
@@ -84,7 +122,7 @@ public class UacUserServiceImpl extends BaseService<UacUser> implements UacUserS
 	private RedisService redisService;
 	@Resource
 	private EmailProducer emailProducer;
-	@Value("${paascloud.auth.active-user-url}")
+	@Value("${cldt.auth.active-user-url}")
 	private String activeUserUrl;
 	@Resource
 	private UacActionService uacActionService;
@@ -545,8 +583,8 @@ public class UacUserServiceImpl extends BaseService<UacUser> implements UacUserS
 		Set<String> to = Sets.newHashSet();
 		to.add(registerDto.getEmail());
 
-		MqMessageData mqMessageData = emailProducer.sendEmailMq(to, UacEmailTemplateEnum.ACTIVE_USER, AliyunMqTopicConstants.MqTagEnum.ACTIVE_USER, param);
-		userManager.register(mqMessageData, uacUser);
+//		MqMessageData mqMessageData = emailProducer.sendEmailMq(to, UacEmailTemplateEnum.ACTIVE_USER, AliyunMqTopicConstants.MqTagEnum.ACTIVE_USER, param);
+//		userManager.register(mqMessageData, uacUser);
 	}
 
 	@Override
@@ -674,8 +712,8 @@ public class UacUserServiceImpl extends BaseService<UacUser> implements UacUserS
 		Set<String> to = Sets.newHashSet();
 		to.add(uacUser.getEmail());
 
-		final MqMessageData mqMessageData = emailProducer.sendEmailMq(to, UacEmailTemplateEnum.RESET_LOGIN_PWD, AliyunMqTopicConstants.MqTagEnum.RESET_LOGIN_PWD, param);
-		userManager.resetLoginPwd(mqMessageData, update);
+//		final MqMessageData mqMessageData = emailProducer.sendEmailMq(to, UacEmailTemplateEnum.RESET_LOGIN_PWD, AliyunMqTopicConstants.MqTagEnum.RESET_LOGIN_PWD, param);
+//		userManager.resetLoginPwd(mqMessageData, update);
 
 
 	}
@@ -787,8 +825,8 @@ public class UacUserServiceImpl extends BaseService<UacUser> implements UacUserS
 		to.add(user.getEmail());
 
 
-		MqMessageData mqMessageData = emailProducer.sendEmailMq(to, UacEmailTemplateEnum.ACTIVE_USER_SUCCESS, AliyunMqTopicConstants.MqTagEnum.ACTIVE_USER_SUCCESS, param);
-		userManager.activeUser(mqMessageData, update, activeUserKey);
+//		MqMessageData mqMessageData = emailProducer.sendEmailMq(to, UacEmailTemplateEnum.ACTIVE_USER_SUCCESS, AliyunMqTopicConstants.MqTagEnum.ACTIVE_USER_SUCCESS, param);
+//		userManager.activeUser(mqMessageData, update, activeUserKey);
 	}
 
 	@Override

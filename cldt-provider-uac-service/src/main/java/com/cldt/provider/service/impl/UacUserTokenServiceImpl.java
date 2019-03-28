@@ -1,4 +1,4 @@
-package com.paascloud.provider.service.impl;
+package com.cldt.provider.service.impl;
 
 import com.alibaba.fastjson.JSON;
 import com.alibaba.fastjson.JSONObject;
@@ -9,22 +9,22 @@ import com.arronlong.httpclientutil.exception.HttpProcessException;
 import com.github.pagehelper.PageHelper;
 import com.github.pagehelper.PageInfo;
 import com.google.common.collect.Maps;
-import com.paascloud.PublicUtil;
-import com.paascloud.RedisKeyUtil;
-import com.paascloud.base.dto.LoginAuthDto;
-import com.paascloud.base.dto.UserTokenDto;
-import com.paascloud.core.support.BaseService;
-import com.paascloud.core.utils.RequestUtil;
-import com.paascloud.provider.mapper.UacUserTokenMapper;
-import com.paascloud.provider.model.domain.UacUser;
-import com.paascloud.provider.model.domain.UacUserToken;
-import com.paascloud.provider.model.dto.token.TokenMainQueryDto;
-import com.paascloud.provider.model.enums.UacUserTokenStatusEnum;
-import com.paascloud.provider.service.OpcRpcService;
-import com.paascloud.provider.service.UacUserService;
-import com.paascloud.provider.service.UacUserTokenService;
-import com.paascloud.security.core.properties.OAuth2ClientProperties;
-import com.paascloud.security.core.properties.SecurityProperties;
+import com.cldt.utils.PublicUtil;
+import com.cldt.utils.RedisKeyUtil;
+import com.cldt.base.dto.LoginAuthDto;
+import com.cldt.base.dto.UserTokenDto;
+import com.cldt.common.core.support.BaseService;
+import com.cldt.common.core.utils.RequestUtil;
+import com.cldt.provider.mapper.UacUserTokenMapper;
+import com.cldt.provider.model.domain.UacUser;
+import com.cldt.provider.model.domain.UacUserToken;
+import com.cldt.provider.model.dto.token.TokenMainQueryDto;
+import com.cldt.provider.model.enums.UacUserTokenStatusEnum;
+import com.cldt.provider.service.OpcRpcService;
+import com.cldt.provider.service.UacUserService;
+import com.cldt.provider.service.UacUserTokenService;
+import com.cldt.security.core.properties.OAuth2ClientProperties;
+import com.cldt.security.core.properties.SecurityProperties;
 import eu.bitwalker.useragentutils.UserAgent;
 import org.apache.commons.lang3.StringUtils;
 import org.apache.http.Header;
@@ -47,7 +47,7 @@ import java.util.concurrent.TimeUnit;
 /**
  * The class Uac user token service.
  *
- * @author paascloud.net @gmail.com
+ * @author cldt @gmail.com
  */
 @Service
 @Transactional(rollbackFor = Exception.class)
@@ -62,7 +62,7 @@ public class UacUserTokenServiceImpl extends BaseService<UacUserToken> implement
 	private RedisTemplate<String, Object> redisTemplate;
 	@Resource
 	private OpcRpcService opcRpcService;
-	@Value("${paascloud.auth.refresh-token-url}")
+	@Value("${cldt.auth.refresh-token-url}")
 	private String refreshTokenUrl;
 
 	@Override

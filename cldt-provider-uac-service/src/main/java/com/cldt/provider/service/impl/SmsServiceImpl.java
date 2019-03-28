@@ -1,18 +1,18 @@
-package com.paascloud.provider.service.impl;
+package com.cldt.provider.service.impl;
 
 import com.google.common.base.Preconditions;
-import com.paascloud.PubUtils;
-import com.paascloud.RedisKeyUtil;
-import com.paascloud.base.constant.AliyunSmsConstants;
-import com.paascloud.core.generator.UniqueIdGenerator;
-import com.paascloud.provider.manager.UserManager;
-import com.paascloud.provider.model.domain.MqMessageData;
-import com.paascloud.provider.model.domain.UacUser;
-import com.paascloud.provider.model.dto.sms.SmsMessage;
-import com.paascloud.provider.mq.producer.SmsProducer;
-import com.paascloud.provider.service.SmsService;
-import com.paascloud.provider.service.UacUserService;
-import com.paascloud.security.core.validate.code.CookieUtil;
+import com.cldt.utils.PubUtils;
+import com.cldt.utils.RedisKeyUtil;
+import com.cldt.base.constant.AliyunSmsConstants;
+import com.cldt.zk.generator.UniqueIdGenerator;
+import com.cldt.provider.manager.UserManager;
+//import com.cldt.provider.model.domain.MqMessageData;
+import com.cldt.provider.model.domain.UacUser;
+import com.cldt.provider.model.dto.sms.SmsMessage;
+import com.cldt.provider.mq.producer.SmsProducer;
+import com.cldt.provider.service.SmsService;
+import com.cldt.provider.service.UacUserService;
+import com.cldt.security.core.validate.code.CookieUtil;
 import lombok.extern.slf4j.Slf4j;
 import org.apache.commons.lang.StringUtils;
 import org.springframework.data.redis.core.RedisTemplate;
@@ -25,7 +25,7 @@ import java.util.concurrent.TimeUnit;
 /**
  * The class Sms service.
  *
- * @author paascloud.net@gmail.com
+ * @author cldt@gmail.com
  */
 @Slf4j
 @Service
@@ -52,8 +52,8 @@ public class SmsServiceImpl implements SmsService {
 		smsMessage.setMobileNo(mobileNo);
 		smsMessage.setOutId(ipAddr);
 		AliyunSmsConstants.SmsTempletEnum templetEnum = AliyunSmsConstants.SmsTempletEnum.getEnum(smsTemplateCode);
-		MqMessageData mqMessageData = smsProducer.sendSmsCodeMq(smsMessage, templetEnum);
-		userManager.sendSmsCode(mqMessageData);
+//		MqMessageData mqMessageData = smsProducer.sendSmsCodeMq(smsMessage, templetEnum);
+//		userManager.sendSmsCode(mqMessageData);
 
 	}
 

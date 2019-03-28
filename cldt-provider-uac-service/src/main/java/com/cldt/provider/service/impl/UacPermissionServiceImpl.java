@@ -1,9 +1,9 @@
-package com.paascloud.provider.service.impl;
+package com.cldt.provider.service.impl;
 
 import com.google.common.base.Joiner;
-import com.paascloud.base.constant.GlobalConstant;
-import com.paascloud.provider.security.SecurityUtils;
-import com.paascloud.provider.service.UacPermissionService;
+import com.cldt.base.constant.GlobalConstant;
+import com.cldt.provider.security.SecurityUtils;
+import com.cldt.provider.service.UacPermissionService;
 import lombok.extern.slf4j.Slf4j;
 import org.apache.commons.lang3.StringUtils;
 import org.springframework.security.core.Authentication;
@@ -19,13 +19,13 @@ import java.util.Set;
 /**
  * The class Uac permission service.
  *
- * @author paascloud.net @gmail.com
+ * @author cldt @gmail.com
  */
 @Slf4j
 @Component("permissionService")
 public class UacPermissionServiceImpl implements UacPermissionService {
 	private AntPathMatcher antPathMatcher = new AntPathMatcher();
-	private static final String OAUTH2_CLIENT_PREFIX = "paascloud-client-";
+	private static final String OAUTH2_CLIENT_PREFIX = "cldt-client-";
 
 	@Resource
 	private ClientDetailsService clientDetailsService;

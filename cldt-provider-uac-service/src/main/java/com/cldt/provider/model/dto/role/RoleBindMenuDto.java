@@ -1,4 +1,4 @@
-package com.paascloud.provider.model.dto.role;
+package com.cldt.provider.model.dto.role;
 
 import io.swagger.annotations.ApiModel;
 import io.swagger.annotations.ApiModelProperty;
@@ -10,7 +10,7 @@ import java.util.Set;
 /**
  * The class Grant auth role.
  *
- * @author paascloud.net@gmail.com
+ * @author cldt@gmail.com
  */
 @Data
 @ApiModel

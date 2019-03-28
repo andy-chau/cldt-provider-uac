@@ -1,22 +1,20 @@
 /*
- * Copyright (c) 2018. paascloud.net All Rights Reserved.
- * 项目名称：paascloud快速搭建企业级分布式微服务平台
+ * Copyright (c) 2018. cldt All Rights Reserved.
+
  * 类名称：AliyunMqConfiguration.java
- * 创建人：刘兆明
- * 联系方式：paascloud.net@gmail.com
- * 开源地址: https://github.com/paascloud
- * 博客地址: http://blog.paascloud.net
- * 项目官网: http://paascloud.net
+
+ * 联系方式：cldt@gmail.com
+
+ * 博客地址: http://blog.cldt
+ * 项目官网: http://cldt
  */
 
-package com.paascloud.provider.config;
+package com.cldt.provider.config;
 
-import com.paascloud.PublicUtil;
-import com.paascloud.base.constant.AliyunMqTopicConstants;
-import com.paascloud.base.constant.GlobalConstant;
-import com.paascloud.config.properties.PaascloudProperties;
-import com.paascloud.provider.mq.consumer.listener.UacPushMessageListener;
+import javax.annotation.Resource;
+
 import lombok.extern.slf4j.Slf4j;
+
 import org.apache.rocketmq.client.consumer.DefaultMQPushConsumer;
 import org.apache.rocketmq.client.exception.MQClientException;
 import org.apache.rocketmq.common.consumer.ConsumeFromWhere;
@@ -24,21 +22,25 @@ import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
 import org.springframework.core.task.TaskExecutor;
 
-import javax.annotation.Resource;
+import com.cldt.base.constant.AliyunMqTopicConstants;
+import com.cldt.base.constant.GlobalConstant;
+import com.cldt.config.properties.CldtProperties;
+import com.cldt.provider.mq.consumer.listener.UacPushMessageListener;
+import com.cldt.utils.PublicUtil;
 
 /**
  * The class Aliyun mq configuration.
  *
- * @author paascloud.net@gmail.com
+ * @author cldt@gmail.com
  */
 @Slf4j
-@Configuration
+//@Configuration
 public class AliyunMqConfiguration {
 	@Resource
 	private UacPushMessageListener uacPushMessageListener;
 
 	@Resource
-	private PaascloudProperties paascloudProperties;
+	private CldtProperties cldtProperties;
 
 	@Resource
 	private TaskExecutor taskExecutor;
@@ -52,8 +54,8 @@ public class AliyunMqConfiguration {
 	 */
 	@Bean
 	public DefaultMQPushConsumer defaultMQPushConsumer() throws MQClientException {
-		DefaultMQPushConsumer consumer = new DefaultMQPushConsumer(paascloudProperties.getAliyun().getRocketMq().getConsumerGroup());
-		consumer.setNamesrvAddr(paascloudProperties.getAliyun().getRocketMq().getNamesrvAddr());
+		DefaultMQPushConsumer consumer = new DefaultMQPushConsumer(cldtProperties.getAliyun().getRocketMq().getConsumerGroup());
+		consumer.setNamesrvAddr(cldtProperties.getAliyun().getRocketMq().getNamesrvAddr());
 		consumer.setConsumeFromWhere(ConsumeFromWhere.CONSUME_FROM_LAST_OFFSET);
 
 		String[] strArray = AliyunMqTopicConstants.ConsumerTopics.UAC.split(GlobalConstant.Symbol.COMMA);

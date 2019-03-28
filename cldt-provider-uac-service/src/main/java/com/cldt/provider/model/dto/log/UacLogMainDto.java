@@ -1,7 +1,7 @@
-package com.paascloud.provider.model.dto.log;
+package com.cldt.provider.model.dto.log;
 
 import com.fasterxml.jackson.annotation.JsonFormat;
-import com.paascloud.base.dto.BaseQuery;
+import com.cldt.base.dto.BaseQuery;
 import io.swagger.annotations.ApiModel;
 import io.swagger.annotations.ApiModelProperty;
 import lombok.Data;
@@ -14,7 +14,7 @@ import java.util.List;
 /**
  * The class Uac log main dto.
  *
- * @author paascloud.net@gmail.com
+ * @author cldt@gmail.com
  */
 @EqualsAndHashCode(callSuper = true)
 @Data

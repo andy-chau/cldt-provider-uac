@@ -1,32 +1,32 @@
 /*
- * Copyright (c) 2018. paascloud.net All Rights Reserved.
- * 项目名称：paascloud快速搭建企业级分布式微服务平台
+ * Copyright (c) 2018. cldt All Rights Reserved.
+
  * 类名称：UacGroupService.java
- * 创建人：刘兆明
- * 联系方式：paascloud.net@gmail.com
- * 开源地址: https://github.com/paascloud
- * 博客地址: http://blog.paascloud.net
- * 项目官网: http://paascloud.net
+
+ * 联系方式：cldt@gmail.com
+
+ * 博客地址: http://blog.cldt
+ * 项目官网: http://cldt
  */
 
-package com.paascloud.provider.service;
+package com.cldt.provider.service;
 
 
-import com.paascloud.base.dto.LoginAuthDto;
-import com.paascloud.provider.model.domain.UacGroup;
-import com.paascloud.provider.model.dto.group.GroupBindUserDto;
-import com.paascloud.provider.model.dto.group.GroupBindUserReqDto;
-import com.paascloud.provider.model.dto.user.IdStatusDto;
-import com.paascloud.provider.model.vo.GroupZtreeVo;
-import com.paascloud.provider.model.vo.MenuVo;
-import com.paascloud.core.support.IService;
+import com.cldt.base.dto.LoginAuthDto;
+import com.cldt.provider.model.domain.UacGroup;
+import com.cldt.provider.model.dto.group.GroupBindUserDto;
+import com.cldt.provider.model.dto.group.GroupBindUserReqDto;
+import com.cldt.provider.model.dto.user.IdStatusDto;
+import com.cldt.provider.model.vo.GroupZtreeVo;
+import com.cldt.provider.model.vo.MenuVo;
+import com.cldt.common.core.support.IService;
 
 import java.util.List;
 
 /**
  * The interface Uac group service.
  *
- * @author paascloud.net@gmail.com
+ * @author cldt@gmail.com
  */
 public interface UacGroupService extends IService<UacGroup> {
 

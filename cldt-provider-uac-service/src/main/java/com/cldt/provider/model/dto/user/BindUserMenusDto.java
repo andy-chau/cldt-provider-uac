@@ -1,4 +1,4 @@
-package com.paascloud.provider.model.dto.user;
+package com.cldt.provider.model.dto.user;
 
 import io.swagger.annotations.ApiModelProperty;
 import lombok.Data;
@@ -10,7 +10,7 @@ import java.util.List;
 /**
  * The class Bind user menus dto.
  *
- * @author paascloud.net@gmail.com
+ * @author cldt@gmail.com
  */
 @Data
 public class BindUserMenusDto implements Serializable {

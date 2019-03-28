@@ -1,4 +1,4 @@
-package com.paascloud.provider.model.dto.menu;
+package com.cldt.provider.model.dto.menu;
 
 import io.swagger.annotations.ApiModel;
 import io.swagger.annotations.ApiModelProperty;
@@ -11,7 +11,7 @@ import java.io.Serializable;
 /**
  * The class Uac menu check code dto.
  *
- * @author paascloud.net@gmail.com
+ * @author cldt@gmail.com
  */
 @Data
 @ApiModel(value = "UacMenuCheckCodeDto")

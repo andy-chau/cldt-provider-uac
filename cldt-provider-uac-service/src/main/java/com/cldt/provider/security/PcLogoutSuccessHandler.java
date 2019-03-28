@@ -1,7 +1,7 @@
-package com.paascloud.provider.security;
+package com.cldt.provider.security;
 
 import com.fasterxml.jackson.databind.ObjectMapper;
-import com.paascloud.wrapper.WrapMapper;
+import com.cldt.utils.wrapper.WrapMapper;
 import lombok.extern.slf4j.Slf4j;
 import org.springframework.security.core.Authentication;
 import org.springframework.security.web.authentication.logout.LogoutSuccessHandler;
@@ -14,7 +14,7 @@ import java.io.IOException;
  * 默认的退出成功处理器，如果设置了paascloud.security.browser.signOutUrl，则跳到配置的地址上，
  * 如果没配置，则返回json格式的响应。
  *
- * @author paascloud.net @gmail.com
+ * @author cldt @gmail.com
  */
 @Slf4j
 public class PcLogoutSuccessHandler implements LogoutSuccessHandler {

@@ -1,4 +1,4 @@
-package com.paascloud.provider.security;
+package com.cldt.provider.security;
 
 import com.google.common.collect.Sets;
 import lombok.AccessLevel;
@@ -17,7 +17,7 @@ import java.util.Set;
 /**
  * The class Security utils.
  *
- * @author paascloud.net @gmail.com
+ * @author cldt @gmail.com
  */
 @NoArgsConstructor(access = AccessLevel.PRIVATE)
 public final class SecurityUtils {
