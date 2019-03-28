@@ -42,7 +42,7 @@ import java.util.List;
 /**
  * 角色管理主页面.
  *
- * @author cldt @gmail.com
+ * @author cldt
  */
 @RestController
 @RequestMapping(value = "/role", produces = MediaType.APPLICATION_JSON_UTF8_VALUE)

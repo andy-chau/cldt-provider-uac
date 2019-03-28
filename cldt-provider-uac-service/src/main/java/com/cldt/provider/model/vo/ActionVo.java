@@ -19,7 +19,7 @@ import lombok.EqualsAndHashCode;
 /**
  * The class Action vo.
  *
- * @author cldt @gmail.com
+ * @author cldt
  */
 @EqualsAndHashCode(callSuper = true)
 @Data

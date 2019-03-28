@@ -22,7 +22,7 @@ import com.cldt.utils.wrapper.Wrapper;
 /**
  * The interface Uac user token feign api.
  *
- * @author cldt @gmail.com
+ * @author cldt
  */
 @FeignClient(value = "paascloud-provider-uac", configuration = OAuth2FeignAutoConfiguration.class, fallback = UacUserTokenFeignApiHystrix.class)
 public interface UacUserTokenFeignApi {

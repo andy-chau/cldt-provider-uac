@@ -24,7 +24,7 @@ import java.util.List;
 /**
  * The interface Uac action service.
  *
- * @author cldt @gmail.com
+ * @author cldt
  */
 public interface UacActionService extends IService<UacAction> {
 	/**

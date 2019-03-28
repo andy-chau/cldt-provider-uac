@@ -24,7 +24,7 @@ import java.util.Map;
 /**
  * The interface Uac user mapper.
  *
- * @author cldt @gmail.com
+ * @author cldt
  */
 @Mapper
 @Component

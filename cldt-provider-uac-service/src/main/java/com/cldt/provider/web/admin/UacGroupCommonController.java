@@ -35,7 +35,7 @@ import java.util.Map;
 /**
  * 组织相关公用接口
  *
- * @author cldt @gmail.com
+ * @author cldt
  */
 @RestController
 @RequestMapping(value = "/group", produces = MediaType.APPLICATION_JSON_UTF8_VALUE)

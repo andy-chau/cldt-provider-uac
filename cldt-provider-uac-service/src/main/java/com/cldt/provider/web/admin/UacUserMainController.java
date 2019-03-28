@@ -43,7 +43,7 @@ import java.util.Objects;
 /**
  * 用户管理主页面.
  *
- * @author cldt @gmail.com
+ * @author cldt
  */
 @RestController
 @RequestMapping(value = "/user", produces = MediaType.APPLICATION_JSON_UTF8_VALUE)

@@ -24,7 +24,7 @@ import javax.servlet.http.HttpServletRequest;
 /**
  * 登录jwt token 管理.
  *
- * @author cldt @gmail.com
+ * @author cldt
  */
 public interface UacUserTokenService extends IService<UacUserToken> {
 	/**

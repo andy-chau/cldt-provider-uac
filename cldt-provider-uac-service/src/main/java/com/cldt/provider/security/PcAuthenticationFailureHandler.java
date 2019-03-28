@@ -16,7 +16,7 @@ import java.io.IOException;
 /**
  * APP环境下认证失败处理器
  *
- * @author cldt @gmail.com
+ * @author cldt
  */
 @Component("pcAuthenticationFailureHandler")
 public class PcAuthenticationFailureHandler extends SimpleUrlAuthenticationFailureHandler {

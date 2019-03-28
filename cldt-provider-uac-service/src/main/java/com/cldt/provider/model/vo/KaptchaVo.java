@@ -17,7 +17,7 @@ import lombok.Data;
 /**
  * The class Kaptcha vo.
  *
- * @author cldt @gmail.com
+ * @author cldt
  */
 @Data
 @Api

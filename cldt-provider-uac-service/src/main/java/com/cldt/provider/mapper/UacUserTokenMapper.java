@@ -22,7 +22,7 @@ import java.util.Map;
 /**
  * The interface Uac user token mapper.
  *
- * @author cldt @gmail.com
+ * @author cldt
  */
 @Mapper
 @Component

@@ -23,7 +23,7 @@ import java.util.List;
 /**
  * The interface Uac log mapper.
  *
- * @author cldt @gmail.com
+ * @author cldt
  */
 @Mapper
 @Component

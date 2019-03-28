@@ -29,7 +29,7 @@ import java.util.List;
 /**
  * The class Web mvc config.
  *
- * @author cldt @gmail.com
+ * @author cldt
  */
 @Configuration
 @EnableWebMvc

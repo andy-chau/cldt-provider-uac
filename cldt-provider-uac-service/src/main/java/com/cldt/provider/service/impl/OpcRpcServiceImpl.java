@@ -27,7 +27,7 @@ import javax.annotation.Resource;
 /**
  * The class Opc rpc service.
  *
- * @author cldt @gmail.com
+ * @author cldt
  */
 @Slf4j
 @Service

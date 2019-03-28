@@ -16,7 +16,7 @@ import javax.annotation.PostConstruct;
 /**
  * The class Rest client details service.
  *
- * @author cldt @gmail.com
+ * @author cldt
  */
 @Slf4j
 @Component("restClientDetailsService")

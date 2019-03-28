@@ -22,7 +22,7 @@ import java.util.List;
 /**
  * The interface Uac role action mapper.
  *
- * @author cldt @gmail.com
+ * @author cldt
  */
 @Mapper
 @Component

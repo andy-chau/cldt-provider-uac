@@ -30,7 +30,7 @@ import javax.annotation.Resource;
 /**
  * 角色管理-公共方法.
  *
- * @author cldt @gmail.com
+ * @author cldt
  */
 @RestController
 @RequestMapping(value = "/role", produces = MediaType.APPLICATION_JSON_UTF8_VALUE)

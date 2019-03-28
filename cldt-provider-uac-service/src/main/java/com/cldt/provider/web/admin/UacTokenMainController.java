@@ -32,7 +32,7 @@ import javax.annotation.Resource;
 /**
  * token主页面.
  *
- * @author cldt @gmail.com
+ * @author cldt
  */
 @RestController
 @RequestMapping(value = "/token", produces = MediaType.APPLICATION_JSON_UTF8_VALUE)

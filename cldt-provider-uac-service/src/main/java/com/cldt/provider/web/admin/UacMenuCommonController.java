@@ -35,7 +35,7 @@ import javax.annotation.Resource;
 /**
  * 菜单.
  *
- * @author cldt @gmail.com
+ * @author cldt
  */
 @RestController
 @RequestMapping(value = "/menu", produces = MediaType.APPLICATION_JSON_UTF8_VALUE)

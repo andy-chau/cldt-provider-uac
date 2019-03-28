@@ -20,7 +20,7 @@ import org.springframework.security.crypto.bcrypt.BCryptPasswordEncoder;
 /**
  * The class Md 5 util.
  *
- * @author cldt @gmail.com
+ * @author cldt
  */
 @Slf4j
 @NoArgsConstructor(access = AccessLevel.PRIVATE)

@@ -18,7 +18,7 @@ import lombok.EqualsAndHashCode;
 /**
  * The class Role vo.
  *
- * @author cldt @gmail.com
+ * @author cldt
  */
 @EqualsAndHashCode(callSuper = true)
 @Data

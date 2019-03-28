@@ -19,7 +19,7 @@ import java.io.Serializable;
 /**
  * 角色树
  *
- * @author cldt @gmail.com
+ * @author cldt
  */
 public class RoleZtreeVo extends ZtreeResponseVo implements Serializable {
 

@@ -26,7 +26,7 @@ import com.github.pagehelper.PageInfo;
 /**
  * The class Uac mq message api hystrix.
  *
- * @author cldt @gmail.com
+ * @author cldt
  */
 @Component
 public class UacMqMessageApiHystrix implements UacMqMessageFeignApi {

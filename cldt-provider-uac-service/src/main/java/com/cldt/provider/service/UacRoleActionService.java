@@ -20,7 +20,7 @@ import java.util.Set;
 /**
  * The interface Uac role action service.
  *
- * @author cldt @gmail.com
+ * @author cldt
  */
 public interface UacRoleActionService extends IService<UacRoleAction> {
 	/**

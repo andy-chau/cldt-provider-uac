@@ -29,7 +29,7 @@ import com.github.pagehelper.PageInfo;
 /**
  * The interface Uac user token feign api.
  *
- * @author cldt @gmail.com
+ * @author cldt
  */
 @FeignClient(value = "paascloud-provider-uac", configuration = OAuth2FeignAutoConfiguration.class, fallback = UacMqMessageApiHystrix.class)
 public interface UacMqMessageFeignApi {

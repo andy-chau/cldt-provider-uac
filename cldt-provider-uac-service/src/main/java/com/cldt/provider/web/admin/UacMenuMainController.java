@@ -36,7 +36,7 @@ import java.util.List;
 /**
  * 菜单主页面.
  *
- * @author cldt @gmail.com
+ * @author cldt
  */
 @RestController
 @RequestMapping(value = "/menu", produces = MediaType.APPLICATION_JSON_UTF8_VALUE)

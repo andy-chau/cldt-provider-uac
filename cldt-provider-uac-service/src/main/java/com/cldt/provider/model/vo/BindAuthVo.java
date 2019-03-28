@@ -20,7 +20,7 @@ import java.util.List;
 /**
  * The class Bind auth vo.
  *
- * @author cldt @gmail.com
+ * @author cldt
  */
 @Data
 @ApiModel

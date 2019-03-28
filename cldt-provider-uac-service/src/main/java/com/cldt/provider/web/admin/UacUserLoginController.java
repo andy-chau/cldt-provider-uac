@@ -38,7 +38,7 @@ import javax.servlet.http.HttpServletRequest;
 /**
  * 登录相关.
  *
- * @author cldt @gmail.com
+ * @author cldt
  */
 @RestController
 @RequestMapping(value = "", produces = MediaType.APPLICATION_JSON_UTF8_VALUE)

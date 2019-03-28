@@ -34,7 +34,7 @@ import javax.annotation.Resource;
 /**
  * The class User manager.
  *
- * @author cldt @gmail.com
+ * @author cldt
  */
 @Slf4j
 @Component

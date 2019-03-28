@@ -30,7 +30,7 @@ import java.util.List;
 /**
  * The interface Uac user service.
  *
- * @author cldt @gmail.com
+ * @author cldt
  */
 public interface UacUserService extends IService<UacUser> {
 	/**

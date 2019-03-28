@@ -30,7 +30,7 @@ import javax.annotation.Resource;
 /**
  * 全局的的异常拦截器
  *
- * @author cldt @gmail.com
+ * @author cldt
  */
 @Slf4j
 @RestControllerAdvice

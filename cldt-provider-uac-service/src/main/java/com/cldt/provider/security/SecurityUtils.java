@@ -17,7 +17,7 @@ import java.util.Set;
 /**
  * The class Security utils.
  *
- * @author cldt @gmail.com
+ * @author cldt
  */
 @NoArgsConstructor(access = AccessLevel.PRIVATE)
 public final class SecurityUtils {

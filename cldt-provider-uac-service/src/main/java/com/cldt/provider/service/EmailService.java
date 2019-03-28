@@ -16,7 +16,7 @@ import com.cldt.provider.model.dto.email.SendEmailMessage;
 /**
  * The interface Email service.
  *
- * @author cldt @gmail.com
+ * @author cldt
  */
 public interface EmailService {
 	/**

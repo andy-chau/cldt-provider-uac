@@ -20,7 +20,7 @@ import com.cldt.utils.wrapper.Wrapper;
 /**
  * The class Uac user token feign api hystrix.
  *
- * @author cldt @gmail.com
+ * @author cldt
  */
 @Component
 public class UacUserTokenFeignApiHystrix implements UacUserTokenFeignApi {

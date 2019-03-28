@@ -33,7 +33,7 @@ import java.util.List;
 /**
  * 组织管理主页面
  *
- * @author cldt @gmail.com
+ * @author cldt
  */
 @RestController
 @RequestMapping(value = "/group", produces = MediaType.APPLICATION_JSON_UTF8_VALUE)

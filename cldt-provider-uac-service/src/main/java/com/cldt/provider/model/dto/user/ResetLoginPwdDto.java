@@ -9,7 +9,7 @@ import java.io.Serializable;
 /**
  * The class Reset login pwd dto.
  *
- * @author cldt @gmail.com
+ * @author cldt
  */
 @Data
 @ApiModel

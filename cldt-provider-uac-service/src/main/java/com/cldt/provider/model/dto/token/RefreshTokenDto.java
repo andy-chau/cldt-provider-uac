@@ -18,7 +18,7 @@ import org.hibernate.validator.constraints.NotBlank;
 /**
  * The class Refresh token dto.
  *
- * @author cldt @gmail.com
+ * @author cldt
  */
 @Data
 public class RefreshTokenDto {

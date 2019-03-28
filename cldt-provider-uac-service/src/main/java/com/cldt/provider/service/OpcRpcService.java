@@ -14,7 +14,7 @@ package com.cldt.provider.service;
 /**
  * The interface Opc rpc service.
  *
- * @author cldt @gmail.com
+ * @author cldt
  */
 public interface OpcRpcService {
 

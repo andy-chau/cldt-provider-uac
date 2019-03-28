@@ -20,7 +20,7 @@ import lombok.EqualsAndHashCode;
 /**
  * The class Token main query dto.
  *
- * @author cldt @gmail.com
+ * @author cldt
  */
 @Data
 @ApiModel

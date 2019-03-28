@@ -35,7 +35,7 @@ import java.util.List;
 /**
  * The class Mall auth rest controller.
  *
- * @author cldt @gmail.com
+ * @author cldt
  */
 @RestController
 @RequestMapping(value = "/auth", produces = MediaType.APPLICATION_JSON_UTF8_VALUE)

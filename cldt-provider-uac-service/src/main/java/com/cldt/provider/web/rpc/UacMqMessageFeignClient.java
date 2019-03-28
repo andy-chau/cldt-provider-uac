@@ -33,7 +33,7 @@ import java.util.List;
 /**
  * Mq 消息.
  *
- * @author cldt @gmail.com
+ * @author cldt
  */
 @RestController
 @Api(value = "API - UacMqMessageFeignClient", produces = MediaType.APPLICATION_JSON_UTF8_VALUE)

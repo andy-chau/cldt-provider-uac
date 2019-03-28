@@ -18,7 +18,7 @@ import java.io.Serializable;
 /**
  * The class Check role code dto.
  *
- * @author cldt @gmail.com
+ * @author cldt
  */
 @Data
 public class CheckRoleCodeDto implements Serializable {

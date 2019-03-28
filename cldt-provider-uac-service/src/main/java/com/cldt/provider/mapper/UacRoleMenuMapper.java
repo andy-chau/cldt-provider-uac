@@ -23,7 +23,7 @@ import java.util.List;
 /**
  * The interface Uac role menu mapper.
  *
- * @author cldt @gmail.com
+ * @author cldt
  */
 @Mapper
 @Component

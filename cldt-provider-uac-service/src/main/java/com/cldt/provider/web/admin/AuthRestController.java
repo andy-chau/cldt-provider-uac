@@ -39,7 +39,7 @@ import javax.servlet.http.HttpServletResponse;
 /**
  * 不认证的URL请求.
  *
- * @author cldt @gmail.com
+ * @author cldt
  */
 @RestController
 @RequestMapping(value = "/auth")

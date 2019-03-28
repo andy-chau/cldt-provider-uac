@@ -36,7 +36,7 @@ import java.util.List;
 /**
  * 购物车管理.
  *
- * @author cldt @gmail.com
+ * @author cldt
  */
 @RestController
 @RequestMapping(value = "/cart", produces = MediaType.APPLICATION_JSON_UTF8_VALUE)

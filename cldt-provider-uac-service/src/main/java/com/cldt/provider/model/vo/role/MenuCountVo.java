@@ -16,7 +16,7 @@ import lombok.Data;
 /**
  * 一级菜单下绑定子菜单个数
  *
- * @author cldt @gmail.com
+ * @author cldt
  */
 @Data
 public class MenuCountVo {

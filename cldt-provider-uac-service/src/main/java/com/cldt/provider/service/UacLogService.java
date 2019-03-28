@@ -24,7 +24,7 @@ import java.util.List;
 /**
  * The interface Uac log service.
  *
- * @author cldt @gmail.com
+ * @author cldt
  */
 public interface UacLogService extends IService<UacLog> {
 

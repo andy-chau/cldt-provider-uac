@@ -21,7 +21,7 @@ import java.util.List;
 /**
  * The class Action main query dto.
  *
- * @author cldt @gmail.com
+ * @author cldt
  */
 @EqualsAndHashCode(callSuper = true)
 @Data
