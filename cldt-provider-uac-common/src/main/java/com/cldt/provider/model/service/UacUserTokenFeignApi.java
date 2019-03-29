@@ -24,7 +24,7 @@ import com.cldt.utils.wrapper.Wrapper;
  *
  * @author cldt
  */
-@FeignClient(value = "paascloud-provider-uac", configuration = OAuth2FeignAutoConfiguration.class, fallback = UacUserTokenFeignApiHystrix.class)
+@FeignClient(value = "cldt-provider-uac-service", configuration = OAuth2FeignAutoConfiguration.class, fallback = UacUserTokenFeignApiHystrix.class)
 public interface UacUserTokenFeignApi {
 
 	/**

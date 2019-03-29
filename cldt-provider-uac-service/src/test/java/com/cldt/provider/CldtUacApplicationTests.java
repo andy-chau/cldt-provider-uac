@@ -9,7 +9,7 @@ import org.springframework.test.context.junit4.SpringRunner;
 
 @RunWith(SpringRunner.class)
 @SpringBootTest
-public class PaasCloudUacApplicationTests {
+public class CldtUacApplicationTests {
 	protected final Logger logger = LoggerFactory.getLogger(this.getClass());
 	@Test
 	public void contextLoads() {

@@ -7,7 +7,7 @@ import org.junit.Test;
 import javax.annotation.Resource;
 import java.util.List;
 
-public class UacMenuServiceTest extends PaasCloudUacApplicationTests {
+public class UacMenuServiceTest extends CldtUacApplicationTests {
 	@Resource
 	private UacMenuService uacMenuService;
 

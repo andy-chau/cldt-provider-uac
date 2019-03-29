@@ -98,11 +98,11 @@ public class UacConstant {
 		/**
 		 * 用户名密码加密秘钥
 		 */
-		public static final String PAASCLOUD_DOMAIN = "paascloud.com";
+		public static final String CLDT_DOMAIN = "cldt.com";
 		/**
 		 * token 前缀
 		 */
-		public static final String PAASCLOUD_PATH = "/ ";
+		public static final String CLDT_PATH = "/ ";
 
 	}
 }

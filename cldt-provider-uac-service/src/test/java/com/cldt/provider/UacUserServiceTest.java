@@ -13,7 +13,7 @@ import java.util.List;
  * The class Uac user service test.
  * @author cldt
  */
-public class UacUserServiceTest extends PaasCloudUacApplicationTests {
+public class UacUserServiceTest extends CldtUacApplicationTests {
 	@Resource
 	private UacUserService uacUserService;
 

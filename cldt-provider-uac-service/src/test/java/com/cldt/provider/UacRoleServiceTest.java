@@ -12,7 +12,7 @@ import javax.annotation.Resource;
  * The class Uac role service test.
  * @author cldt
  */
-public class UacRoleServiceTest extends PaasCloudUacApplicationTests {
+public class UacRoleServiceTest extends CldtUacApplicationTests {
 	@Resource
 	private UacRoleService uacRoleService;
 

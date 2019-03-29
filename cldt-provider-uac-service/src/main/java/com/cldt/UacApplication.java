@@ -1,7 +1,7 @@
 /*
  * Copyright (c) 2018. cldt All Rights Reserved.
 
- * 类名称：PaasCloudUacApplication.java
+ * 类名称：UacApplication.java
 
  * 联系方式：cldt
 
