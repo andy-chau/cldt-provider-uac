@@ -11,9 +11,10 @@
 
 package com.cldt;
 
-import com.cldt.provider.service.impl.PcSmsCodeSender;
-import com.cldt.security.core.validate.code.sms.SmsCodeSender;
+import javax.sql.DataSource;
+
 import liquibase.integration.spring.SpringLiquibase;
+
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 import org.springframework.cloud.client.discovery.EnableDiscoveryClient;
@@ -23,7 +24,10 @@ import org.springframework.context.annotation.Bean;
 import org.springframework.context.support.ReloadableResourceBundleMessageSource;
 import org.springframework.transaction.annotation.EnableTransactionManagement;
 
-import javax.sql.DataSource;
+import tk.mybatis.spring.annotation.MapperScan;
+
+import com.cldt.provider.service.impl.PcSmsCodeSender;
+import com.cldt.security.core.validate.code.sms.SmsCodeSender;
 
 /**
  * The class cldt uac application.

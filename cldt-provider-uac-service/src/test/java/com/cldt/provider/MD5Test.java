@@ -1,10 +1,12 @@
 package com.cldt.provider;
 
-import com.cldt.provider.utils.Md5Util;
 import lombok.extern.slf4j.Slf4j;
+
 import org.springframework.security.authentication.encoding.Md5PasswordEncoder;
 import org.springframework.security.authentication.encoding.ShaPasswordEncoder;
-import org.springframework.security.crypto.keygen.KeyGenerators;
+
+import com.cldt.provider.utils.Md5Util;
+import com.cldt.utils.RandomUtil;
 
 
 /**
@@ -66,18 +68,21 @@ public class MD5Test {
 	 *
 	 */
 	public static void main(String[] args) {
-		md5(); // 使用简单的MD5加密方式     
-
-		sha_256(); // 使用256的哈希算法(SHA)加密     
-
-		sha_SHA_256(); // 使用SHA-256的哈希算法(SHA)加密     
-
-		md5_SystemWideSaltSource(); // 使用MD5再加全局加密盐加密的方式加密
-		String salt = KeyGenerators.string().generateKey();
-		log.info(salt);
-		log.info("salt.length={}", salt.length());
-		String encrypt = Md5Util.encrypt("123456");
-		log.info(encrypt);
+//		md5(); // 使用简单的MD5加密方式     
+//
+//		sha_256(); // 使用256的哈希算法(SHA)加密     
+//
+//		sha_SHA_256(); // 使用SHA-256的哈希算法(SHA)加密     
+//
+//		md5_SystemWideSaltSource(); // 使用MD5再加全局加密盐加密的方式加密
+//		String salt = KeyGenerators.string().generateKey();
+//		log.info(salt);
+//		log.info("salt.length={}", salt.length());
+//		String encrypt = Md5Util.encrypt("123456");
+//		log.info(encrypt);
+		String newLoginPwd = "123456";//RandomUtil.createComplexCode(8);
+		log.info(newLoginPwd);
+		log.info(Md5Util.encrypt(newLoginPwd));
 	}
 
 }  
