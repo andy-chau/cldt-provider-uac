@@ -24,7 +24,7 @@
 
     <modules>
         <module>cldt-provider-uac-service</module>
-        <module>cldt-provider-uac-common</module>
+        <module>cldt-provider-uac-feign</module>
     </modules>
 
     <dependencies>
