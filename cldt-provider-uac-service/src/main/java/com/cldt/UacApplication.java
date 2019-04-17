@@ -24,8 +24,6 @@ import org.springframework.context.annotation.Bean;
 import org.springframework.context.support.ReloadableResourceBundleMessageSource;
 import org.springframework.transaction.annotation.EnableTransactionManagement;
 
-import tk.mybatis.spring.annotation.MapperScan;
-
 import com.cldt.provider.service.impl.PcSmsCodeSender;
 import com.cldt.security.core.validate.code.sms.SmsCodeSender;
 
